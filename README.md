@@ -28,7 +28,9 @@ proposed technologies include:
 # services
 
 # authors
+
 **Sharon Korir**
+
 **Tressie Muthuri**
 
 # to do
