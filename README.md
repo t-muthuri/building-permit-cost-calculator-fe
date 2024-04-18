@@ -6,6 +6,7 @@ Building plans approval software in ReactJs and Python
 
 
 # prerequisites
+ReactJS
 <!-- built with `add technologies` -->
 <!-- 
 proposed technologies include:
@@ -30,10 +31,23 @@ proposed technologies include:
 # authors
 
 **Sharon Korir**
+- website
+- contact information
 
 **Tressie Muthuri**
+- website
+- contact information
 
 # to do
+* [] Work on the uploading documents feature
+* [] Add authentication with firebase
+* [] Design ui to upload documents required for approvals
+    - Documents include (not limited to):
+        * [] Architectural drawings
+        * [] Structural drawings (at least one-storey buildings and more)
+        * [] Architect's licence
+        * [] Structural Engineer's licence
+
 <!-- 
 - determine the purpose and scope of the software
 - list the technical reuirements
