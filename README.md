@@ -1,21 +1,23 @@
 # buiding-plans-approvals
-Building plans approval software in ReactJs and Python
+Building plans approval software in ReactJs and Django
 
 # about
 <!-- about the software -->
 
 
 # prerequisites
-ReactJS
+This project has been designed with
+- ReactJs for the UI design
+- Django for the backend
+- MySQL db
 <!-- built with `add technologies` -->
 <!-- 
 proposed technologies include:
-- ReactJs for the UI design
-- Python for the backend (a library or framework would do: to be decided)
 - Zustand for state management (as opposed to redux)
 - Markdown for documentation
-- Open API
+- Open API - yaml files
 - CircleCI for tracking changes and deploying
+- Add code linting to the file - use eslint and prettier
  -->
 
 # install
@@ -47,6 +49,8 @@ proposed technologies include:
         * [] Structural drawings (at least one-storey buildings and more)
         * [] Architect's licence
         * [] Structural Engineer's licence
+* [] Approval cost calcuator
+* [] Construction articles news scrapper
 
 <!-- 
 - determine the purpose and scope of the software
