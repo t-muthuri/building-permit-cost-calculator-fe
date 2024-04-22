@@ -1,9 +1,37 @@
 # buiding-plans-approvals
+Welcome to the Building Plans Approval Process.
 Building plans approval software in ReactJs and Django
 
-# about
-<!-- about the software -->
+# project description
+This is a service that is created to enable the ease of understanding what you need during the building approvals process. This service allows clients, developers, architects and any other stakeholders involved in the construction process to get an estimate of how much couny approvals may cost, read articles that shed light on the same and allows them to upload documents awaiting approvals to the county government.
 
+# project structure
+
+Atomic folder structure
+```
+.
+├── public
+├── src
+│   ├── assets
+│   ├── components
+|       ├──atoms
+|       ├──molecules
+|       ├──organisms
+|       ├──pages
+|       ├──templates
+|   ├── config
+│   ├── models
+│   ├── services
+│   ├── store
+|   ├── utils
+|   ├── ...
+|   ├── App.js
+│   └── ...
+├── ...
+|
+├── README.md
+└── ...
+```
 
 # prerequisites
 This project has been designed with
@@ -19,6 +47,23 @@ proposed technologies include:
 - CircleCI for tracking changes and deploying
 - Add code linting to the file - use eslint and prettier
  -->
+
+### Roadmap
+
+The following roadmap outlines the planned milestones and features for the service:
+
+1. Design planning and collaboration
+2. Initial implementation of core pages
+    - Articles
+    - Calculator
+    - Uploading dashboard
+    - Login
+    - Signup
+3. Integration of design assets
+4. Styling and responsiveness
+5. Performance optimization and testing
+6. Final bug fixes and refinements
+
 
 # install
 <!-- how to run, test, build the software -->
@@ -62,13 +107,15 @@ proposed technologies include:
 - timeline of project
  -->
 
+# Contributions
+Create a branch and a PR with your contributions. Commit messages should follow [semantic commit messages](https://seesparkbox.com/foundry/semantic_commit_messages)
 
-# naming branches
-chore:
-add:
-update:
-feature:
-fix:
+**naming branches**
+chore/:
+add/:
+update/:
+feature/:
+fix/:
 
 ## Available Scripts
 
