@@ -1,3 +1,3 @@
-describe("app", () => {
-  test("should render the app component", () => {});
+describe('app', () => {
+  test('should render the app component', () => {});
 });
