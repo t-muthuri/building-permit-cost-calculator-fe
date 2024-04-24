@@ -8,29 +8,41 @@ This is a service that is created to enable the ease of understanding what you n
 # project structure
 
 Atomic folder structure
+
 ```
-.
-├── public
-├── src
-│   ├── assets
-│   ├── components
-|       ├──atoms
-|       ├──molecules
-|       ├──organisms
-|       ├──pages
-|       ├──templates
-|   ├── config
-│   ├── models
-│   ├── services
-│   ├── store
-|   ├── utils
-|   ├── ...
-|   ├── App.js
-│   └── ...
-├── ...
-|
-├── README.md
-└── ...
+└── 📁building-plans-approvals-fe
+    └── .gitignore
+    └── LICENSE
+    └── README.md
+    └── package-lock.json
+    └── package.json
+    └── 📁public
+        └── index.html
+        └── manifest.json
+        └── robots.txt
+    └── 📁src
+        └── App.css
+        └── App.js
+        └── App.test.js
+        └── 📁assets
+        └── 📁components
+            └── 📁atoms
+            └── 📁molecules
+            └── 📁organisms
+            └── 📁pages
+                └── 📁cost
+                └── 📁news
+                ├── upload
+            ├── templates
+        └── index.css
+        └── index.js
+        └── logo.svg
+        └── 📁modules
+        └── reportWebVitals.js
+        └── 📁services
+        └── setupTests.js
+        └── 📁store
+        ├── utils
 ```
 
 # prerequisites
@@ -96,6 +108,8 @@ The following roadmap outlines the planned milestones and features for the servi
         * [] Structural Engineer's licence
 * [] Approval cost calcuator
 * [] Construction articles news scrapper
+* [] Add circleci and code linting
+
 
 <!-- 
 - determine the purpose and scope of the software
@@ -106,6 +120,9 @@ The following roadmap outlines the planned milestones and features for the servi
 - decide on qa and testing (is it necessary now?)
 - timeline of project
  -->
+
+# references
+[Draw folder structure](https://marketplace.visualstudio.com/items?itemName=jmkrivocapich.drawfolderstructure#:~:text=Navigate%20to%20the%20file%20explorer,folder%20structure%20in%20Markdown%20format!)
 
 # Contributions
 Create a branch and a PR with your contributions. Commit messages should follow [semantic commit messages](https://seesparkbox.com/foundry/semantic_commit_messages)
