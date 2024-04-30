@@ -30,6 +30,7 @@ const Calculator = () => {
               required
             />
             <br />
+            <br />
             <label> Type of project </label>
             <input
               type='text'
@@ -39,6 +40,7 @@ const Calculator = () => {
               required
             />
             <br />
+            <br />
             <label> County </label>
             <input
               type='text'
@@ -47,6 +49,7 @@ const Calculator = () => {
               defaultValue={form.county}
               required
             />
+            <br />
             <br />
             <label> Total cost of construction project </label>
             <input
