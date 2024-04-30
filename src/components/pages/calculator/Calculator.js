@@ -59,11 +59,13 @@ const Calculator = () => {
               defaultValue={form.total_cost_of_construction_project}
               required
             />
+            <br />
+            <br />
+            <button> Calculate </button>
           </div>
         )}
       </form>
       <br />
-      <button> Caculate </button>
     </div>
   );
 };
