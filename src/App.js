@@ -1,10 +1,11 @@
 import './App.css';
 import React from 'react';
+import CrazyEnough from './components/pages/crazy_enough/CrazyEnough';
 
 function App() {
   return (
     <div className='App'>
-      <h1>TOo Fly</h1>
+      <CrazyEnough />
     </div>
   );
 }
