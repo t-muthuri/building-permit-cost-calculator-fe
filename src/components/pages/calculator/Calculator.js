@@ -62,6 +62,8 @@ const Calculator = () => {
           </div>
         )}
       </form>
+      <br />
+      <button>Submit</button>
     </div>
   );
 };
