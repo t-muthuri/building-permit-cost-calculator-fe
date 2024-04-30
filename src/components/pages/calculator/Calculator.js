@@ -18,7 +18,47 @@ const Calculator = () => {
   return (
     <div>
       <h1>Approvals</h1>
-      <p>{JSON.stringify(form)}</p>
+      <form>
+        {form && (
+          <div>
+            <label> Project size </label>
+            <input
+              type='number'
+              name='size'
+              id='size'
+              defaultValue={form.project_size}
+              required
+            />
+            <br />
+            <label> Type of project </label>
+            <input
+              type='text'
+              name='project'
+              id='project'
+              defaultValue={form.type_of_project}
+              required
+            />
+            <br />
+            <label> County </label>
+            <input
+              type='text'
+              name='county'
+              id='county'
+              defaultValue={form.county}
+              required
+            />
+            <br />
+            <label> Total cost of construction project </label>
+            <input
+              type='number'
+              name='cost'
+              id='cost'
+              defaultValue={form.total_cost_of_construction_project}
+              required
+            />
+          </div>
+        )}
+      </form>
     </div>
   );
 };
