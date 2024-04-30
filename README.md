@@ -2,6 +2,38 @@
 Welcome to the Building Plans Approval Process.
 Building plans approval software in ReactJs and Django
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [buiding-plans-approvals](#buiding-plans-approvals)
+- [project description](#project-description)
+- [project structure](#project-structure)
+- [prerequisites](#prerequisites)
+    - [Roadmap](#roadmap)
+- [install](#install)
+- [features](#features)
+- [usage](#usage)
+- [services](#services)
+- [authors](#authors)
+- [to do](#to-do)
+- [references](#references)
+- [Contributions](#contributions)
+  - [Available Scripts](#available-scripts)
+    - [`npm start`](#npm-start)
+    - [`npm test`](#npm-test)
+    - [`npm run build`](#npm-run-build)
+    - [`npm run eject`](#npm-run-eject)
+  - [Learn More](#learn-more)
+    - [Code Splitting](#code-splitting)
+    - [Analyzing the Bundle Size](#analyzing-the-bundle-size)
+    - [Making a Progressive Web App](#making-a-progressive-web-app)
+    - [Advanced Configuration](#advanced-configuration)
+    - [Deployment](#deployment)
+    - [`npm run build` fails to minify](#npm-run-build-fails-to-minify)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # project description
 This is a service that is created to enable the ease of understanding what you need during the building approvals process. This service allows clients, developers, architects and any other stakeholders involved in the construction process to get an estimate of how much couny approvals may cost, read articles that shed light on the same and allows them to upload documents awaiting approvals to the county government.
 
