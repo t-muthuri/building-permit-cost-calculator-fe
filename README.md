@@ -35,45 +35,45 @@ Building plans approval software in ReactJs and Django
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # project description
-This is a service that is created to enable the ease of understanding what you need during the building approvals process. This service allows clients, developers, architects and any other stakeholders involved in the construction process to get an estimate of how much couny approvals may cost, read articles that shed light on the same and allows them to upload documents awaiting approvals to the county government.
+This is a service that is created to enable the ease of understanding what you need during the building approvals process. This service allows clients, developers, architects and any other stakeholders involved in the construction process to get an estimate of how much county approvals may cost, read articles that shed light on the same and allows them to upload documents awaiting approvals to the county government.
 
 # project structure
 
 Atomic folder structure
 
 ```
-└── 📁building-plans-approvals-fe
+└── building-plans-approvals-fe
     └── .gitignore
     └── LICENSE
     └── README.md
     └── package-lock.json
     └── package.json
-    └── 📁public
+    └── public
         └── index.html
         └── manifest.json
         └── robots.txt
-    └── 📁src
+    └── src
         └── App.css
         └── App.js
         └── App.test.js
-        └── 📁assets
-        └── 📁components
-            └── 📁atoms
-            └── 📁molecules
-            └── 📁organisms
-            └── 📁pages
-                └── 📁cost
-                └── 📁news
+        └── assets
+        └── components
+            └── atoms
+            └── molecules
+            └── organisms
+            └── pages
+                └── cost
+                └── news
                 ├── upload
             ├── templates
         └── index.css
         └── index.js
         └── logo.svg
-        └── 📁modules
+        └── modules
         └── reportWebVitals.js
-        └── 📁services
+        └── services
         └── setupTests.js
-        └── 📁store
+        └── store
         ├── utils
 ```
 
