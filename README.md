@@ -1,24 +1,35 @@
-# buiding-plans-approvals
+# Buiding-plans-approvals
 Welcome to the Building Plans Approval Process.
-Building plans approval software in ReactJs and Django
+Building plans approval software in ReactJs and Django.
+
+**Author's note:**
+
+    You may notice that this README is quite detailed. The reason for this is because documentation, I have heard time and again, is like a future love letter to yourself. To make sure that important details don't get forgotten, I aim to document the building and making of this project with the keenness of a PHD student. Use the T.O.C. provided below to navigate the document with ease. Happy Coding!
+
+_Keep exploring, to the stars and beyond_
+
+**_Muthuri**
+
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [buiding-plans-approvals](#buiding-plans-approvals)
-- [project description](#project-description)
-- [project structure](#project-structure)
-- [prerequisites](#prerequisites)
+- [Project description](#project-description)
+- [Project structure](#project-structure)
+- [Prerequisites](#prerequisites)
     - [Roadmap](#roadmap)
-- [install](#install)
-- [features](#features)
-- [usage](#usage)
-- [services](#services)
-- [authors](#authors)
+- [Install](#install)
+- [Features](#features)
+- [Usage](#usage)
+- [Services](#services)
+- [Authors](#authors)
 - [to do](#to-do)
-- [references](#references)
+- [References](#references)
+  - [Books](#books)
+  - [Articles](#articles)
 - [Contributions](#contributions)
+- [Best practices for developers who wish to contribute](#best-practices-for-developers-who-wish-to-contribute)
   - [Available Scripts](#available-scripts)
     - [`npm start`](#npm-start)
     - [`npm test`](#npm-test)
@@ -34,10 +45,10 @@ Building plans approval software in ReactJs and Django
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# project description
+# Project description
 This is a service that is created to enable the ease of understanding what you need during the building approvals process. This service allows clients, developers, architects and any other stakeholders involved in the construction process to get an estimate of how much county approvals may cost, read articles that shed light on the same and allows them to upload documents awaiting approvals to the county government.
 
-# project structure
+# Project structure
 
 Atomic folder structure
 
@@ -77,7 +88,7 @@ Atomic folder structure
         ├── utils
 ```
 
-# prerequisites
+# Prerequisites
 This project has been designed with
 - ReactJs for the UI design
 - Django for the backend
@@ -109,17 +120,17 @@ The following roadmap outlines the planned milestones and features for the servi
 6. Final bug fixes and refinements
 
 
-# install
+# Install
 <!-- how to run, test, build the software -->
 
-# features
+# Features
 <!-- add a table with the feature name and the description of what each feature does -->
 
-# usage
+# Usage
 
-# services
+# Services
 
-# authors
+# Authors
 
 **Sharon Korir**
 - website
@@ -153,11 +164,18 @@ The following roadmap outlines the planned milestones and features for the servi
 - timeline of project
  -->
 
-# references
+# References
 [Draw folder structure](https://marketplace.visualstudio.com/items?itemName=jmkrivocapich.drawfolderstructure#:~:text=Navigate%20to%20the%20file%20explorer,folder%20structure%20in%20Markdown%20format!)
+## Books
+## Articles
 
 # Contributions
 Create a branch and a PR with your contributions. Commit messages should follow [semantic commit messages](https://seesparkbox.com/foundry/semantic_commit_messages)
+
+# Best practices for developers who wish to contribute
+- Avoid leaving commented-out code in the committed codebase.
+- Avoid using hard-coded values in the code.
+
 
 **naming branches**
 chore/:
