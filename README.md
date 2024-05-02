@@ -152,7 +152,8 @@ The following roadmap outlines the planned milestones and features for the servi
 * [] Approval cost calcuator
 * [] Construction articles news scrapper
 * [] Add circleci and code linting
-
+* [] Update folder structure in README
+* [] set up an automated build server - research on how to do this first
 
 <!-- 
 - determine the purpose and scope of the software
@@ -175,6 +176,9 @@ Create a branch and a PR with your contributions. Commit messages should follow 
 # Best practices for developers who wish to contribute
 - Avoid leaving commented-out code in the committed codebase.
 - Avoid using hard-coded values in the code.
+- Before adding a new feature, check to see if an existing one can be re-designed to perform both tasks or replaced entirely with a better method.
+- When fixing what is not broken, write code that is simpler, shorter and beautiful.
+- 
 
 
 **naming branches**
