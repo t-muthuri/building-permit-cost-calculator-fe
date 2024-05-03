@@ -118,7 +118,7 @@ The following roadmap outlines the planned milestones and features for the servi
 4. Styling and responsiveness
 5. Performance optimization and testing
 6. Final bug fixes and refinements
-
+7. User Acceptance Testing - Launching project to different construction stakeholders i.e., architects, architecture students, architectural designers, county reps, quantity surveyors, foreman, fundis, clients e.t.c.
 
 # Install
 <!-- how to run, test, build the software -->
