@@ -6,9 +6,7 @@ Building plans approval software in ReactJs and Django.
 
     You may notice that this README is quite detailed. The reason for this is because documentation, I have heard time and again, is like a future love letter to yourself. To make sure that important details don't get forgotten, I aim to document the building and making of this project with the keenness of a PHD student. Use the T.O.C. provided below to navigate the document with ease. Happy Coding!
 
-_Keep exploring, to the stars and beyond_
-
-**_Muthuri**
+_Keep exploring, to infinity and beyond_ __Lightyear
 
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
