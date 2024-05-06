@@ -2,6 +2,8 @@
 Welcome to the Building Plans Approval Process.
 Building plans approval software in ReactJs and Django.
 
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 **Author's note:**
 
     You may notice that this README is quite detailed. The reason for this is because documentation, I have heard time and again, is like a future love letter to yourself. To make sure that important details don't get forgotten, I aim to document the building and making of this project with the keenness of a PHD student. Use the T.O.C. provided below to navigate the document with ease. Happy Coding!
@@ -118,11 +120,33 @@ The following roadmap outlines the planned milestones and features for the servi
 6. Final bug fixes and refinements
 7. User Acceptance Testing - Launching project to different construction stakeholders i.e., architects, architecture students, architectural designers, county reps, quantity surveyors, foreman, fundis, clients e.t.c.
 
-# Install
+# Project setup
+## Local setup
+In the project directory, you can run:
+
+### `npm install`
+Installs node dependencies.\
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm run lint`
+Lints and fixes errors.
+
+### `npm run format`
+Formats the project.
+
 <!-- how to run, test, build the software -->
 
 # Features
-<!-- add a table with the feature name and the description of what each feature does -->
+| Feature name | Description |
+|--------------|-------------|
+| Approvals cost calculator | Calculates the estimated cost of approvals and how much it may cost to acquire a building permit |
 
 # Usage
 
@@ -164,7 +188,10 @@ The following roadmap outlines the planned milestones and features for the servi
  -->
 
 # References
+## Docs
 [Draw folder structure](https://marketplace.visualstudio.com/items?itemName=jmkrivocapich.drawfolderstructure#:~:text=Navigate%20to%20the%20file%20explorer,folder%20structure%20in%20Markdown%20format!)
+[Markdown guide](https://www.markdownguide.org/)
+
 ## Books
 ## Articles
 
@@ -187,16 +214,6 @@ feature/:
 fix/:
 
 ## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### `npm test`
 
