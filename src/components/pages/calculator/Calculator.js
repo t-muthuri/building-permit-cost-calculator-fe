@@ -6,9 +6,10 @@ const Calculator = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8000/api/calculator/')
+      .get('http://localhost:8000/api/calculator/counties-list/')
       .then((response) => {
         setForm(response.data.form);
+        console.log(response.data);
       })
       .catch((error) => {
         console.log(error);
@@ -39,24 +40,24 @@ const Calculator = () => {
       <form onSubmit={handleSubmit}>
         {form && (
           <div>
-            <label> Project size </label>
+            {/* <label> Project size </label>
             <input
               type='number'
               name='size'
               id='size'
               defaultValue={form.project_size}
               required
-            />
+            /> */}
             <br />
             <br />
-            <label> Type of project </label>
+            {/* <label> Type of project </label>
             <input
               type='text'
               name='project'
               id='project'
               defaultValue={form.type_of_project}
               required
-            />
+            /> */}
             <br />
             <br />
             <label> County </label>
@@ -64,19 +65,19 @@ const Calculator = () => {
               type='text'
               name='county'
               id='county'
-              defaultValue={form.county}
+              defaultValue={form.counties}
               required
             />
             <br />
             <br />
-            <label> Total cost of construction project </label>
+            {/* <label> Total cost of construction project </label>
             <input
               type='number'
               name='cost'
               id='cost'
               defaultValue={form.total_cost_of_construction_project}
               required
-            />
+            /> */}
             <br />
             <br />
             <button type='submit'> Calculate </button>
