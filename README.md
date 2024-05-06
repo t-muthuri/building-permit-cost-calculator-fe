@@ -171,7 +171,7 @@ Formats the project.
         * [] Structural drawings (at least one-storey buildings and more)
         * [] Architect's licence
         * [] Structural Engineer's licence
-* [] Approval cost calcuator
+* [] Approval cost calculator
 * [] Construction articles news scrapper
 * [] Add circleci and code linting
 * [] Update folder structure in README
@@ -189,7 +189,7 @@ Formats the project.
 
 # References
 ## Docs
-[Draw folder structure](https://marketplace.visualstudio.com/items?itemName=jmkrivocapich.drawfolderstructure#:~:text=Navigate%20to%20the%20file%20explorer,folder%20structure%20in%20Markdown%20format!)
+[Draw folder structure](https://marketplace.visualstudio.com/items?itemName=jmkrivocapich.drawfolderstructure#:~:text=Navigate%20to%20the%20file%20explorer,folder%20structure%20in%20Markdown%20format!)\
 [Markdown guide](https://www.markdownguide.org/)
 
 ## Books
