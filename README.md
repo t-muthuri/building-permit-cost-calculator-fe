@@ -172,10 +172,20 @@ Formats the project.
         * [] Architect's licence
         * [] Structural Engineer's licence
 * [] Approval cost calculator
+    * [] get the form
+        * [] project size
+        * [x] counties
+        * [] project type
+        * [] boq
+    * [] post the calculated data
+        * [] total cost of approvals
 * [] Construction articles news scrapper
 * [] Add circleci and code linting
 * [] Update folder structure in README
 * [] set up an automated build server - research on how to do this first
+* [] use .env to define urls
+* [] use yaml files to fetch the base url http://localhost:8000
+
 
 <!-- 
 - determine the purpose and scope of the software
