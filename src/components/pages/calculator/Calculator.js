@@ -27,11 +27,31 @@ const Calculator = () => {
       });
   }, []);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formParameters = new FormData(e.target);
+    const values = {
+      size: formParameters.get('size'),
+      county: formParameters.get('county'),
+      projectType: formParameters.get('projectType'),
+      cost: formParameters.get('cost'),
+    };
+
+    axios
+      .post('http://localhost:8000/api/calculator/calculate-cost/', values)
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  };
+
   return (
     <div>
       <h1>Approvals</h1>
       {
-        <form>
+        <form onSubmit={handleSubmit}>
           <label htmlFor='size'>Project size: </label>
           <input type='number' id='size' name='size' />
           <br />
@@ -47,7 +67,7 @@ const Calculator = () => {
           </select>
           <br />
           <label htmlFor='projectTypes'>Select a project type: </label>
-          <select id='projectTypes'>
+          <select id='projectType'>
             <option value=''>select the project type: </option>
             {projectType.map((project) => (
               <option
@@ -62,7 +82,7 @@ const Calculator = () => {
           <label htmlFor='cost'>Total cost of construction:</label>
           <input type='number' id='cost' name='cost' />
           <br />
-          <button>Calculate</button>
+          <button type='submit'>Calculate</button>
         </form>
       }
     </div>
