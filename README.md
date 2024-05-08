@@ -46,7 +46,7 @@ _Keep exploring, to infinity and beyond_ __Lightyear
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # Project description
-This is a service that is created to enable the ease of understanding what you need during the building approvals process. This service allows clients, developers, architects and any other stakeholders involved in the construction process to get an estimate of how much county approvals may cost, read articles that shed light on the same and allows them to upload documents awaiting approvals to the county government.
+This is a service that is created to help clients and construction stakeholders know what is needed to acquire a building permit in Kenya. This service allows clients, developers, architects and any other stakeholders involved in the construction process to get an estimate of how much county approvals may cost, read articles that shed light on the same and allows them to upload documents awaiting approvals to the county government.
 
 # Project structure
 
@@ -91,7 +91,7 @@ Atomic folder structure
 # Prerequisites
 This project has been designed with
 - ReactJs for the UI design
-- Django for the backend
+- [Django for the backend](https://github.com/t-muthuri/building-plans-approvals-be)
 - MySQL db
 <!-- built with `add technologies` -->
 <!-- 
@@ -146,7 +146,7 @@ Formats the project.
 # Features
 | Feature name | Description |
 |--------------|-------------|
-| Approvals cost calculator | Calculates the estimated cost of approvals and how much it may cost to acquire a building permit |
+| Approvals cost calculator | Calculates the estimated cost of approvals and how much it may cost to acquire a building permit in different Kenyan counties |
 
 # Usage
 
@@ -172,7 +172,7 @@ Formats the project.
         * [] Architect's licence
         * [] Structural Engineer's licence
 * [] Approval cost calculator
-    * [] get the form
+    * [x] get the form
         * [x] project size
         * [x] counties
         * [x] project type

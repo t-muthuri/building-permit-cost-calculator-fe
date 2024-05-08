@@ -32,10 +32,10 @@ const Calculator = () => {
       <h1>Approvals</h1>
       {
         <form>
-          <label htmlFor='size'>Project size:</label>
+          <label htmlFor='size'>Project size: </label>
           <input type='number' id='size' name='size' />
           <br />
-          <label htmlFor='counties'>Select county:</label>
+          <label htmlFor='counties'>Select county: </label>
           <select id='county'>
             <option value=''>select a county</option>
             {counties &&
@@ -46,12 +46,11 @@ const Calculator = () => {
               ))}
           </select>
           <br />
-          <label htmlFor='projectTypes'>Select a project type:</label>
+          <label htmlFor='projectTypes'>Select a project type: </label>
           <select id='projectTypes'>
-            <option value=''>select the project type:</option>
+            <option value=''>select the project type: </option>
             {projectType.map((project) => (
               <option
-                // create a unique ke identify by combining the county id no. and the project type name
                 key={project.project_type_no}
                 value={project.project_type_no}
               >
@@ -62,6 +61,8 @@ const Calculator = () => {
           <br />
           <label htmlFor='cost'>Total cost of construction:</label>
           <input type='number' id='cost' name='cost' />
+          <br />
+          <button>Calculate</button>
         </form>
       }
     </div>
