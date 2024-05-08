@@ -177,8 +177,9 @@ Formats the project.
         * [x] counties
         * [x] project type
         * [x] boq
-    * [] post the calculated data
-        * [] total cost of approvals
+    * [x] post the calculated data in the console
+        * [] post the data in the ui
+        * [] total cost of approvals calculated est
 * [] Construction articles news scrapper
 * [] Add circleci and code linting
 * [] Update folder structure in README
