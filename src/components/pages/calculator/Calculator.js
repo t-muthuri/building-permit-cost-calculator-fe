@@ -18,7 +18,7 @@ const Calculator = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8000/api/calculator/project-type/')
+      .get('http://localhost:8000/api/calculator/project-types-list/')
       .then((response) => {
         setProjectType(response.data.results);
       })
@@ -52,10 +52,10 @@ const Calculator = () => {
             {projectType.map((project) => (
               <option
                 // create a unique ke identify by combining the county id no. and the project type name
-                key={`${project.county} -${project.project_name}`}
-                value={project.project_no}
+                key={project.project_type_no}
+                value={project.project_type_no}
               >
-                {project.project_name}
+                {project.project_type_name}
               </option>
             ))}
           </select>

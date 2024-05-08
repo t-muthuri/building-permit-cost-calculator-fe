@@ -173,10 +173,10 @@ Formats the project.
         * [] Structural Engineer's licence
 * [] Approval cost calculator
     * [] get the form
-        * [] project size
+        * [x] project size
         * [x] counties
-        * [] project type
-        * [] boq
+        * [x] project type
+        * [x] boq
     * [] post the calculated data
         * [] total cost of approvals
 * [] Construction articles news scrapper
