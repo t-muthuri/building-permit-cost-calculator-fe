@@ -56,23 +56,23 @@ const Calculator = () => {
           <input type='number' id='size' name='size' />
           <br />
           <label htmlFor='counties'>Select county: </label>
-          <select id='county'>
+          <select id='county' name='county'>
             <option value=''>select a county</option>
             {counties &&
               counties.map((county) => (
-                <option key={county.county_no} value={county.county_no}>
+                <option key={county.county_no} value={county.county_name}>
                   {county.county_name}
                 </option>
               ))}
           </select>
           <br />
           <label htmlFor='projectTypes'>Select a project type: </label>
-          <select id='projectType'>
+          <select id='projectType' name='projectType'>
             <option value=''>select the project type: </option>
             {projectType.map((project) => (
               <option
                 key={project.project_type_no}
-                value={project.project_type_no}
+                value={project.project_type_name}
               >
                 {project.project_type_name}
               </option>
