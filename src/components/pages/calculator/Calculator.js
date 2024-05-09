@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 const Calculator = () => {
   const [counties, setCounties] = useState([]);
   const [projectType, setProjectType] = useState([]);
+  const [costs, setCosts] = useState([]);
 
   useEffect(() => {
     axios
@@ -40,7 +41,7 @@ const Calculator = () => {
     axios
       .post('http://localhost:8000/api/calculator/calculate-cost/', values)
       .then((response) => {
-        console.log(response.data);
+        setCosts([response.data.context]);
       })
       .catch((error) => {
         console.error('Error:', error);
@@ -85,6 +86,23 @@ const Calculator = () => {
           <button type='submit'>Calculate</button>
         </form>
       }
+      {costs.length > 0 ? (
+        <div>
+          <h2>Calculated Costs</h2>
+          <ul>
+            {costs.map((cost, index) => (
+              <li key={index}>
+                <strong>Building Permit Cost:</strong>{' '}
+                {cost.building_permit_cost}
+                <br />
+                <strong>Arch Building Cost:</strong> {cost.arch_building_cost}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : (
+        <p>No costs available</p>
+      )}
     </div>
   );
 };
