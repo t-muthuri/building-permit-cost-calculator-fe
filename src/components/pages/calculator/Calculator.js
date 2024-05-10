@@ -2,7 +2,10 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
 const Calculator = () => {
-  const [counties, setCounties] = useState([]);
+  // Call useState at the top level to declare a state variable
+  // `set` triggers a re-render
+  // initialize with an empty array - this prevents the undefined error when trying to map over the variable's initial state
+  const [counties, setCounties] = useState([]); //use to updat
   const [projectType, setProjectType] = useState([]);
   const [costs, setCosts] = useState([]);
 
@@ -10,6 +13,7 @@ const Calculator = () => {
     axios
       .get('http://localhost:8000/api/calculator/counties-list/')
       .then((response) => {
+        // update current counties state to an array of counties fetched from the be
         setCounties(response.data.results);
       })
       .catch((error) => {
@@ -21,6 +25,7 @@ const Calculator = () => {
     axios
       .get('http://localhost:8000/api/calculator/project-types-list/')
       .then((response) => {
+        // update current projectType state to an array of project types
         setProjectType(response.data.results);
       })
       .catch((error) => {
@@ -41,6 +46,7 @@ const Calculator = () => {
     axios
       .post('http://localhost:8000/api/calculator/calculate-cost/', values)
       .then((response) => {
+        // update current costs state to an array of costs received from the backend
         setCosts([response.data.context]);
       })
       .catch((error) => {
@@ -86,6 +92,7 @@ const Calculator = () => {
           <button type='submit'>Calculate</button>
         </form>
       }
+      {/* update the component */}
       {costs.length > 0 ? (
         <div>
           <h2>Calculated Costs</h2>

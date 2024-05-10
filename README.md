@@ -181,12 +181,14 @@ Formats the project.
         * [] post the data in the ui
             * [] use React's state management to update and render the UI dynamically
         * [x] total cost of approvals calculated est
+        * [] combine the multiple axios get requests - <span style="color:red;">refactor</span>
 * [] Construction articles news scrapper
 * [] Add circleci and code linting
 * [] Update folder structure in README
 * [] set up an automated build server - research on how to do this first
 * [] use .env to define urls
 * [] use yaml files to fetch the base url http://localhost:8000
+* [] how to use openapi (advantages)
 
 
 <!-- 
