@@ -13,12 +13,11 @@ function App() {
     // </div>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Calculator />}>
-          <Route path='/news' element={<News />} />
-          <Route path='/Login' element={<Login />} />
-          <Route path='/Signup' element={<Signup />} />
-          <Route path='/Upload' element={<Upload />} />
-        </Route>
+        <Route path='/' element={<Calculator />} />
+        <Route path='/news' element={<News />} />
+        <Route path='/Login' element={<Login />} />
+        <Route path='/Signup' element={<Signup />} />
+        <Route path='/Upload' element={<Upload />} />
       </Routes>
     </BrowserRouter>
   );
