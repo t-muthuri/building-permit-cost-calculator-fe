@@ -1,63 +1,78 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 const Calculator = () => {
   const baseUrl = process.env.REACT_APP_API_BASE_URL;
-  // Call useState at the top level to declare a state variable
-  // `set` triggers a re-render
-  // initialize with an empty array - this prevents the undefined error when trying to map over the variable's initial state
-  const [counties, setCounties] = useState([]); //use to updat
-  const [projectType, setProjectType] = useState([]);
-  const [costs, setCosts] = useState([]);
+  // const [counties, setCounties] = useState([]);
+  // const [projectType, setProjectType] = useState([]);
+  // const [costs, setCosts] = useState([]);
+  const countyReq = axios.get(`${baseUrl}counties-list/`);
+  const projectTypeReq = axios.get(`${baseUrl}project-types-list/`);
 
-  useEffect(() => {
-    axios
-      .get(`${baseUrl}counties-list/`)
-      .then((response) => {
-        // update current counties state to an array of counties fetched from the be
-        setCounties(response.data.results);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
+  axios.all([countyReq, projectTypeReq]).then(
+    axios.spread((...response) => {
+      console.log(response[0]);
+      console.log(response[1]);
+    }),
+  );
 
-  useEffect(() => {
-    axios
-      .get(`${baseUrl}project-types-list/`)
-      .then((response) => {
-        // update current projectType state to an array of project types
-        setProjectType(response.data.results);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .all([countyReq, projectTypeReq])
+  //     .then(
+  //       (data) => console.log(data),
+  //     )
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }, []);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const formParameters = new FormData(e.target);
-    const values = {
-      size: formParameters.get('size'),
-      county: formParameters.get('county'),
-      projectType: formParameters.get('projectType'),
-      cost: formParameters.get('cost'),
-    };
+  // useEffect(() => {
+  //   axios
+  //     .get(`${baseUrl}counties-list/`)
+  //     .then((response) => {
+  //       setCounties(response.data.results);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }, []);
 
-    axios
-      .post(`${baseUrl}calculate-cost/`, values)
-      .then((response) => {
-        // update current costs state to an array of costs received from the backend
-        setCosts([response.data.context]);
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
-  };
+  // useEffect(() => {
+  //   axios
+  //     .get(`${baseUrl}project-types-list/`)
+  //     .then((response) => {
+  //       setProjectType(response.data.results);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }, []);
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const formParameters = new FormData(e.target);
+  //   const values = {
+  //     size: formParameters.get('size'),
+  //     county: formParameters.get('county'),
+  //     projectType: formParameters.get('projectType'),
+  //     cost: formParameters.get('cost'),
+  //   };
+
+  //   axios
+  //     .post(`${baseUrl}calculate-cost/`, values)
+  //     .then((response) => {
+  //       setCosts([response.data.context]);
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error:', error);
+  //     });
+  // };
 
   return (
     <div>
-      <h1>Approvals</h1>
+      {/* <h1>Approvals</h1>
       {
         <form onSubmit={handleSubmit}>
           <label htmlFor='size'>Project size: </label>
@@ -93,7 +108,6 @@ const Calculator = () => {
           <button type='submit'>Calculate</button>
         </form>
       }
-      {/* update the component */}
       {costs.length > 0 ? (
         <div>
           <h2>Calculated Costs</h2>
@@ -110,7 +124,7 @@ const Calculator = () => {
         </div>
       ) : (
         <p>No costs available</p>
-      )}
+      )} */}
     </div>
   );
 };
