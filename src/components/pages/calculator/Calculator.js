@@ -16,8 +16,6 @@ const Calculator = () => {
         axios.spread((...response) => {
           setCounties(response[0].data.results);
           setProjectType(response[1].data.results);
-          console.log(response[0]);
-          console.log(response[1]);
         }),
       )
       .catch((error) => {
