@@ -1,11 +1,7 @@
 import React from 'react';
 
 const Signup = () => {
-  return (
-    <div>
-      <h1>News</h1>
-    </div>
-  );
+  return <div>Signup</div>;
 };
 
 export default Signup;
