@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
 const Calculator = () => {
+  const baseUrl = process.env.REACT_APP_API_BASE_URL;
   // Call useState at the top level to declare a state variable
   // `set` triggers a re-render
   // initialize with an empty array - this prevents the undefined error when trying to map over the variable's initial state
@@ -11,7 +12,7 @@ const Calculator = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8000/api/calculator/counties-list/')
+      .get(`${baseUrl}counties-list/`)
       .then((response) => {
         // update current counties state to an array of counties fetched from the be
         setCounties(response.data.results);
@@ -23,7 +24,7 @@ const Calculator = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8000/api/calculator/project-types-list/')
+      .get(`${baseUrl}project-types-list/`)
       .then((response) => {
         // update current projectType state to an array of project types
         setProjectType(response.data.results);
@@ -44,7 +45,7 @@ const Calculator = () => {
     };
 
     axios
-      .post('http://localhost:8000/api/calculator/calculate-cost/', values)
+      .post(`${baseUrl}calculate-cost/`, values)
       .then((response) => {
         // update current costs state to an array of costs received from the backend
         setCosts([response.data.context]);
