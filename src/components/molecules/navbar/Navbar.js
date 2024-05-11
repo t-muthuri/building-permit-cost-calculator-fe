@@ -13,8 +13,14 @@ const Navbar = () => {
         <li>
           <NavLink
             to='/'
-            activeClassName='active'
-            className='nav-links'
+            className={({ isActive, isPending, isTransitioning }) =>
+              [
+                isPending ? 'pending' : '',
+                isActive ? 'active' : '',
+                isTransitioning ? 'transitioning' : '',
+              ].join(' ')
+            }
+            // className='nav-links'
             onClick={handleClick}
           >
             Calculator
@@ -23,8 +29,13 @@ const Navbar = () => {
         <li>
           <NavLink
             to='/news'
-            activeClassName='active'
-            className='nav-links'
+            className={({ isActive, isPending, isTransitioning }) =>
+              [
+                isPending ? 'pending' : '',
+                isActive ? 'active' : '',
+                isTransitioning ? 'transitioning' : '',
+              ].join(' ')
+            }
             onClick={handleClick}
           >
             News
@@ -34,8 +45,13 @@ const Navbar = () => {
         <li>
           <NavLink
             to='/login'
-            activeClassName='active'
-            className='nav-links'
+            className={({ isActive, isPending, isTransitioning }) =>
+              [
+                isPending ? 'pending' : '',
+                isActive ? 'active' : '',
+                isTransitioning ? 'transitioning' : '',
+              ].join(' ')
+            }
             onClick={handleClick}
           >
             Login
@@ -44,8 +60,13 @@ const Navbar = () => {
         <li>
           <NavLink
             to='/signup'
-            activeClassName='active'
-            className='nav-links'
+            className={({ isActive, isPending, isTransitioning }) =>
+              [
+                isPending ? 'pending' : '',
+                isActive ? 'active' : '',
+                isTransitioning ? 'transitioning' : '',
+              ].join(' ')
+            }
             onClick={handleClick}
           >
             Signup
@@ -54,8 +75,13 @@ const Navbar = () => {
         <li>
           <NavLink
             to='/upload'
-            activeClassName='active'
-            className='nav-links'
+            className={({ isActive, isPending, isTransitioning }) =>
+              [
+                isPending ? 'pending' : '',
+                isActive ? 'active' : '',
+                isTransitioning ? 'transitioning' : '',
+              ].join(' ')
+            }
             onClick={handleClick}
           >
             Upload
