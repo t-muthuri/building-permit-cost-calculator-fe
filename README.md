@@ -162,6 +162,11 @@ Formats the project.
 - website
 - contact information
 
+# to investigate
+
+* [] when I change the value of the cost of construction the ui does not rerender or update the cost
+
+
 # to do
 * [] Work on the uploading documents feature
 * [] Add authentication with firebase

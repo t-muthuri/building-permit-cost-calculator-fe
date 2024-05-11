@@ -1,78 +1,53 @@
 import axios from 'axios';
-// import React, { useEffect, useState } from 'react';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Calculator = () => {
   const baseUrl = process.env.REACT_APP_API_BASE_URL;
-  // const [counties, setCounties] = useState([]);
-  // const [projectType, setProjectType] = useState([]);
-  // const [costs, setCosts] = useState([]);
+  const [counties, setCounties] = useState([]);
+  const [projectType, setProjectType] = useState([]);
+  const [costs, setCosts] = useState([]);
   const countyReq = axios.get(`${baseUrl}counties-list/`);
   const projectTypeReq = axios.get(`${baseUrl}project-types-list/`);
 
-  axios.all([countyReq, projectTypeReq]).then(
-    axios.spread((...response) => {
-      console.log(response[0]);
-      console.log(response[1]);
-    }),
-  );
+  useEffect(() => {
+    axios
+      .all([countyReq, projectTypeReq])
+      .then(
+        axios.spread((...response) => {
+          setCounties(response[0].data.results);
+          setProjectType(response[1].data.results);
+          console.log(response[0]);
+          console.log(response[1]);
+        }),
+      )
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
-  // useEffect(() => {
-  //   axios
-  //     .all([countyReq, projectTypeReq])
-  //     .then(
-  //       (data) => console.log(data),
-  //     )
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }, []);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formParameters = new FormData(e.target);
+    const values = {
+      size: formParameters.get('size'),
+      county: formParameters.get('county'),
+      projectType: formParameters.get('projectType'),
+      cost: formParameters.get('cost'),
+    };
 
-  // useEffect(() => {
-  //   axios
-  //     .get(`${baseUrl}counties-list/`)
-  //     .then((response) => {
-  //       setCounties(response.data.results);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }, []);
-
-  // useEffect(() => {
-  //   axios
-  //     .get(`${baseUrl}project-types-list/`)
-  //     .then((response) => {
-  //       setProjectType(response.data.results);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }, []);
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   const formParameters = new FormData(e.target);
-  //   const values = {
-  //     size: formParameters.get('size'),
-  //     county: formParameters.get('county'),
-  //     projectType: formParameters.get('projectType'),
-  //     cost: formParameters.get('cost'),
-  //   };
-
-  //   axios
-  //     .post(`${baseUrl}calculate-cost/`, values)
-  //     .then((response) => {
-  //       setCosts([response.data.context]);
-  //     })
-  //     .catch((error) => {
-  //       console.error('Error:', error);
-  //     });
-  // };
+    axios
+      .post(`${baseUrl}calculate-cost/`, values)
+      .then((response) => {
+        setCosts([response.data.context]);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  };
 
   return (
     <div>
-      {/* <h1>Approvals</h1>
+      <h1>Approvals</h1>
       {
         <form onSubmit={handleSubmit}>
           <label htmlFor='size'>Project size: </label>
@@ -124,7 +99,7 @@ const Calculator = () => {
         </div>
       ) : (
         <p>No costs available</p>
-      )} */}
+      )}
     </div>
   );
 };
