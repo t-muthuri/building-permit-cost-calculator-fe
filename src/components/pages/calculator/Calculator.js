@@ -49,7 +49,12 @@ const Calculator = () => {
       {
         <form onSubmit={handleSubmit}>
           <label htmlFor='size'>Project size: </label>
-          <input type='number' id='size' name='size' />
+          <input
+            type='number'
+            id='size'
+            name='size'
+            placeholder='Enter size of the project'
+          />
           <br />
           <label htmlFor='counties'>Select county: </label>
           <select id='county' name='county'>
@@ -76,7 +81,12 @@ const Calculator = () => {
           </select>
           <br />
           <label htmlFor='cost'>Total cost of construction:</label>
-          <input type='number' id='cost' name='cost' />
+          <input
+            type='number'
+            id='cost'
+            name='cost'
+            placeholder='Enter the cost of construction'
+          />
           <br />
           <input type='submit' name='submit' id='submit' />
         </form>
