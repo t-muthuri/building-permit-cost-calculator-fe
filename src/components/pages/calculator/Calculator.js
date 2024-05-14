@@ -78,7 +78,7 @@ const Calculator = () => {
           <label htmlFor='cost'>Total cost of construction:</label>
           <input type='number' id='cost' name='cost' />
           <br />
-          <button type='submit'>Calculate</button>
+          <input type='submit' name='submit' id='submit' />
         </form>
       }
       {costs.length > 0 ? (
