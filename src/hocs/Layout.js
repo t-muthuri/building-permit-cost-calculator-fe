@@ -1,5 +1,5 @@
-import React from 'react'
-import Navbar from '../components/molecules/navbar/Navbar'
+import React from 'react';
+import Navbar from '../components/molecules/navbar/Navbar';
 
 // logic:
 // when a client refreshes the app they remain logged in
@@ -8,10 +8,10 @@ import Navbar from '../components/molecules/navbar/Navbar'
 const Layout = (props) => {
   return (
     <div>
-        <Navbar />
-        {props.children}
+      <Navbar />
+      {props.children}
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
