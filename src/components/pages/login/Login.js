@@ -1,31 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 
 const Login = () => {
+  const [formLoginData, setFormLoginData] = useState({
+    name: '',
+    password: '',
+  });
+
+  const { name, password } = formLoginData;
+  const onChange = (e) =>
+    setFormLoginData({ ...formLoginData, [e.target.name]: e.target.value });
+  const onSubmit = (e) => {
+    e.preventDefault();
+    // login (name,password)
+  };
+  // is client authenticated
+  // redirect to upload page
+
   return (
     <div>
-      <form>
-        <label htmlFor='fname'>First name:</label>
+      <h1>Login</h1>
+      <p>Log into your account</p>
+      <form onSubmit={(e) => onSubmit(e)}>
+        <label htmlFor='uname'>username:</label>
         <input
-          name='fname'
-          id='fname'
+          name='uname'
+          id='uname'
           type='text'
-          placeholder='Enter your first name'
-        />
-        <br />
-        <label htmlFor='lname'>Last name:</label>
-        <input
-          name='lname'
-          id='lname'
-          type='text'
-          placeholder='Enter your last name'
-        />
-        <br />
-        <label htmlFor='email'>Email:</label>
-        <input
-          name='email'
-          id='email'
-          type='email'
-          placeholder='Enter your email address'
+          placeholder='Enter your username'
+          value={name}
+          onChange={(e) => onChange(e)}
+          required
         />
         <br />
         <label htmlFor='password'>Password:</label>
@@ -34,21 +40,21 @@ const Login = () => {
           id='password'
           type='password'
           placeholder='Enter a password'
+          value={password}
+          onChange={(e) => onChange(e)}
+          minLength='6'
+          required
         />
         <br />
-        <label htmlFor='cpassword'>Confirm password:</label>
-        <input
-          name='cpassword'
-          id='cpassword'
-          type='password'
-          placeholder='Confirm your password'
-        />
-        <br />
-        <input type='submit' name='submit' id='submit' />
+        <button type='submit'>Login</button>
+        {/* <input type='submit' name='submit' id='submit' /> */}
       </form>
-      <p>Do it with passion or not at all</p>
+      <p>
+        Don&apos;t have an account?<NavLink to='/signup'>Signup</NavLink>
+      </p>
     </div>
   );
 };
 
-export default Login;
+// export default Login;
+export default connect(null, {})(Login);
