@@ -19,19 +19,25 @@ _Keep exploring, to infinity and beyond_ __Lightyear
 - [Project structure](#project-structure)
 - [Prerequisites](#prerequisites)
     - [Roadmap](#roadmap)
-- [Install](#install)
+- [Project setup](#project-setup)
+  - [Local setup](#local-setup)
+    - [`npm install`](#npm-install)
+    - [`npm start`](#npm-start)
+    - [`npm run lint`](#npm-run-lint)
+    - [`npm run format`](#npm-run-format)
 - [Features](#features)
 - [Usage](#usage)
 - [Services](#services)
 - [Authors](#authors)
+- [to investigate](#to-investigate)
 - [to do](#to-do)
 - [References](#references)
+  - [Docs](#docs)
   - [Books](#books)
   - [Articles](#articles)
 - [Contributions](#contributions)
 - [Best practices for developers who wish to contribute](#best-practices-for-developers-who-wish-to-contribute)
   - [Available Scripts](#available-scripts)
-    - [`npm start`](#npm-start)
     - [`npm test`](#npm-test)
     - [`npm run build`](#npm-run-build)
     - [`npm run eject`](#npm-run-eject)
@@ -93,14 +99,16 @@ This project has been designed with
 - ReactJs for the UI design
 - [Django for the backend](https://github.com/t-muthuri/building-plans-approvals-be)
 - MySQL db
+- Redux for state management
+- Markdown for documentation
+- CircleCI for tracking changes <!-- and deploying -->
+- Eslint and prettier formatting rules
+
 <!-- built with `add technologies` -->
 <!-- 
 proposed technologies include:
 - Zustand for state management (as opposed to redux)
-- Markdown for documentation
 - Open API - yaml files
-- CircleCI for tracking changes and deploying
-- Add code linting to the file - use eslint and prettier
  -->
 
 ### Roadmap
@@ -147,6 +155,7 @@ Formats the project.
 | Feature name | Description |
 |--------------|-------------|
 | Approvals cost calculator | Calculates the estimated cost of approvals and how much it may cost to acquire a building permit in different Kenyan counties |
+| Authorization | Login a client so that they are able to upload the required documents for approvals |
 
 # Usage
 
@@ -188,8 +197,8 @@ Formats the project.
         * [x] total cost of approvals calculated est
         * [] combine the multiple axios get requests - <span style="color:red;">refactor</span>
 * [] Construction articles news scrapper
-* [] Add circleci and code linting
-* [] Update folder structure in README
+* [x] Add circleci and code linting
+* [x] Update folder structure in README
 * [] set up an automated build server - research on how to do this first
 * [x] use .env to define urls
 * [] use yaml files to fetch the base url http://localhost:8000
