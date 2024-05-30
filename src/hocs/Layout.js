@@ -6,11 +6,12 @@ import PropTypes from prop-types;
 // when a client refreshes the app they remain logged in
 // function checks if the client is authorized
 
-const Layout = (props) => {
+const Layout = (// props
+) => {
   return (
     <div>
       <Navbar />
-      {props.children}
+      {/* {props.children} */}
     </div>
   );
 };
