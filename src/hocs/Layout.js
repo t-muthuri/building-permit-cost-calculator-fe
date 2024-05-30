@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../components/molecules/navbar/Navbar';
+import PropTypes from prop-types;
 
 // logic:
 // when a client refreshes the app they remain logged in

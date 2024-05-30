@@ -191,7 +191,7 @@ Formats the project.
 * [] Add circleci and code linting
 * [] Update folder structure in README
 * [] set up an automated build server - research on how to do this first
-* [] use .env to define urls
+* [x] use .env to define urls
 * [] use yaml files to fetch the base url http://localhost:8000
 * [] how to use openapi (advantages)
 
