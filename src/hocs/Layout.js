@@ -1,17 +1,13 @@
 import React from 'react';
 import Navbar from '../components/molecules/navbar/Navbar';
-import PropTypes from prop-types;
-
 // logic:
 // when a client refreshes the app they remain logged in
 // function checks if the client is authorized
 
-const Layout = (// props
-) => {
+const Layout = () => {
   return (
     <div>
       <Navbar />
-      {/* {props.children} */}
     </div>
   );
 };
