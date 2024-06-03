@@ -80,17 +80,7 @@ const Navbar = ({ logout, isAuthenticated }) => {
 
   const authLinks = () => (
     <li>
-      <a
-        // className={({ isActive, isPending, isTransitioning }) =>
-        //   [
-        //     isPending ? 'pending' : '',
-        //     isActive ? 'active' : '',
-        //     isTransitioning ? 'transitioning' : '',
-        //   ].join(' ')
-        // }
-        href='#!'
-        onClick={logout}
-      >
+      <a href='#!' onClick={logout}>
         Logout
       </a>
     </li>
@@ -115,7 +105,7 @@ const Navbar = ({ logout, isAuthenticated }) => {
           </NavLink>
         </li>
         {guestLinks()}
-        {isAuthenticated && authLinks}
+        {isAuthenticated && authLinks()}
       </ul>
     </div>
   );
