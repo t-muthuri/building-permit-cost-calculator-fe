@@ -178,7 +178,7 @@ Formats the project.
 
 # to do
 * [] Work on the uploading documents feature
-    * [] /upload is a protected route, if user is not authenticated redirect to login / signup page
+    * [x] /upload is a protected route, if user is not authenticated redirect to login / signup page
     * [] client signs up
     * [x] client logs in
     * [] client authenticated when the page is refreshed

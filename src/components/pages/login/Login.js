@@ -26,7 +26,7 @@ const Login = ({ login, isAuthenticated }) => {
     <div>
       <h1>Login</h1>
       <p>Log into your account</p>
-      <form id='login' onSubmit={(e) => onSubmit(e)}>
+      <form onSubmit={(e) => onSubmit(e)}>
         <label htmlFor='name'>username:</label>
         <input
           name='name'
