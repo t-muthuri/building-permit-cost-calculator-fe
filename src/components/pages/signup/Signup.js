@@ -10,6 +10,7 @@ const Signup = () => {
           id='fname'
           type='text'
           placeholder='Enter your first name'
+          autoComplete='off'
         />
         <br />
         <label htmlFor='lname'>Last name:</label>
@@ -18,6 +19,7 @@ const Signup = () => {
           id='lname'
           type='text'
           placeholder='Enter your last name'
+          autoComplete='off'
         />
         <br />
         <label htmlFor='email'>Email:</label>
@@ -26,6 +28,7 @@ const Signup = () => {
           id='email'
           type='email'
           placeholder='Enter your email address'
+          autoComplete='off'
         />
         <br />
         <label htmlFor='password'>Password:</label>

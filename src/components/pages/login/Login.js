@@ -36,6 +36,7 @@ const Login = ({ login, isAuthenticated }) => {
           value={name}
           onChange={(e) => onChange(e)}
           required
+          autoComplete='off'
         />
         <br />
         <label htmlFor='password'>Password:</label>

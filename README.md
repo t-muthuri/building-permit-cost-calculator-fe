@@ -231,12 +231,33 @@ Formats the project.
 # Contributions
 Create a branch and a PR with your contributions. Commit messages should follow [semantic commit messages](https://seesparkbox.com/foundry/semantic_commit_messages)
 
-# Best practices for developers who wish to contribute
+## Best practices for developers who wish to contribute
 - Avoid leaving commented-out code in the committed codebase.
 - Avoid using hard-coded values in the code.
 - Before adding a new feature, check to see if an existing one can be re-designed to perform both tasks or replaced entirely with a better method.
 - When fixing what is not broken, write code that is simpler, shorter and beautiful.
-- 
+
+## For professionals in the construction industry who wish to contribute
+
+- Architects, Quantity Surveyors, Civil Engineers, Construction stakeholders, Clients can use the calculator to give their clients an estimated cost of acquiring a building permit
+<!-- how do you collect analytics data -->
+
+- Architects, Quantity Surveyors, Civil Engineers, Construction stakeholders can give feedback:
+    - on how the application can be improved to make their work easier
+    - if the application has been beneficial to their work
+    - on how and when they use the application
+    <!-- attach a link for the feedback -->
+
+- County officials can suggest additional charges that may have been omitted
+
+## For architects in the software development field
+
+- Raise any issues you may encounter while testing the software
+    - Functionality
+    - Responsiveness
+    - UI issues
+- Suggest new features that can be added to the software
+<!-- research on various areas where you can receive feedback while conducting a UAT -->
 
 
 **naming branches**
