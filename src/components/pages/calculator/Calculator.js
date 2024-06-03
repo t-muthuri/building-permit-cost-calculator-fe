@@ -56,7 +56,7 @@ const Calculator = () => {
             placeholder='Enter size of the project'
           />
           <br />
-          <label htmlFor='counties'>Select county: </label>
+          <label htmlFor='county'>Select county: </label>
           <select id='county' name='county'>
             <option value=''>select a county</option>
             {counties &&
@@ -67,7 +67,7 @@ const Calculator = () => {
               ))}
           </select>
           <br />
-          <label htmlFor='projectTypes'>Select a project type: </label>
+          <label htmlFor='projectType'>Select a project type: </label>
           <select id='projectType' name='projectType'>
             <option value=''>select the project type: </option>
             {projectType.map((project) => (

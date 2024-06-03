@@ -9,6 +9,7 @@ import Signup from './components/pages/signup/Signup';
 import Navbar from './components/molecules/navbar/Navbar';
 import { Provider } from 'react-redux';
 import store from './store/store';
+import ProtectedRoute from './utils/ProtectedRoute';
 
 function App() {
   return (
@@ -20,7 +21,14 @@ function App() {
           <Route path='/news' element={<News />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
-          <Route path='/upload' element={<Upload />} />
+          <Route
+            path='/upload'
+            element={
+              <ProtectedRoute>
+                <Upload />
+              </ProtectedRoute>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </Provider>
