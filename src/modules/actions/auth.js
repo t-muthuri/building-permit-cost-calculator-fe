@@ -1,4 +1,3 @@
-// import { useDispatch } from 'react-redux';
 import {
   LOGIN_SUCCESS,
   LOGIN_FAIL,
@@ -9,7 +8,6 @@ import {
   LOGOUT,
 } from './types';
 import axios from 'axios';
-// import { type } from '@testing-library/user-event/dist/type';
 
 export const checkAuthenticated = () => async (dispatch) => {
   // check if access token exists

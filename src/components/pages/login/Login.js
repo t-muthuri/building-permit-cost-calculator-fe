@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Navigate } from 'react-router-dom';
 import { login } from '../../../modules/actions/auth';
 import PropTypes from 'prop-types';
 
-const Login = ({ login }) => {
+const Login = ({ login, isAuthenticated }) => {
   const [formLoginData, setFormLoginData] = useState({
     name: '',
     password: '',
@@ -17,8 +17,10 @@ const Login = ({ login }) => {
     e.preventDefault();
     login(name, password);
   };
-  // is client authenticated
-  // redirect to upload page
+
+  if (isAuthenticated) {
+    return <Navigate to='/upload' />;
+  }
 
   return (
     <div>
@@ -49,7 +51,6 @@ const Login = ({ login }) => {
         />
         <br />
         <button type='submit'>Login</button>
-        {/* <input type='submit' name='submit' id='submit' /> */}
       </form>
       <p>
         Don&apos;t have an account?<NavLink to='/signup'>Signup</NavLink>
@@ -60,10 +61,11 @@ const Login = ({ login }) => {
 
 Login.propTypes = {
   login: PropTypes.func.isRequired,
+  isAuthenticated: PropTypes.bool,
 };
 
-// const mapStateToProps = state({
-// is authenticated?
-// });
-// export default Login;
-export default connect(null, { login })(Login);
+const mapStateToProps = (state) => ({
+  isAuthenticated: state.auth.isAuthenticated,
+});
+
+export default connect(mapStateToProps, { login })(Login);
