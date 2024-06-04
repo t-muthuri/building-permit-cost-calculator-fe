@@ -155,7 +155,7 @@ Formats the project.
 | Feature name | Description |
 |--------------|-------------|
 | Approvals cost calculator | Calculates the estimated cost of approvals and how much it may cost to acquire a building permit in different Kenyan counties |
-| Authorization | Login a client so that they are able to upload the required documents for approvals |
+| Authorization | Signup and login a client so that they are able to upload the required documents for approvals |
 
 # Usage
 
@@ -179,7 +179,7 @@ Formats the project.
 # to do
 * [] Work on the uploading documents feature
     * [x] /upload is a protected route, if user is not authenticated redirect to login / signup page
-    * [] client signs up
+    * [x] client signs up
     * [x] client logs in
     * [] client authenticated when the page is refreshed
     * [] use the refresh token to get a new access token, client remains authenticated
