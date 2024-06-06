@@ -1,8 +1,9 @@
 import axios from 'axios';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Upload = () => {
   const [fileName, setFileName] = useState('');
+  const [files, setFiles] = useState([{}]);
   const uploadUrl = process.env.REACT_APP_API_UPLOAD_URL;
   const saveFile = () => {
     let formData = new FormData();
@@ -24,6 +25,24 @@ const Upload = () => {
         console.error('Error:', error);
       });
   };
+
+  const getFiles = () => {
+    axios
+      .get(`${uploadUrl}files/`)
+      .then((response) => {
+        setFiles(response.data);
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.error('Error', error);
+      });
+  };
+
+  useEffect(() => {
+    getFiles();
+    console.log(files);
+  }, []);
+
   return (
     <div>
       <form>
@@ -47,12 +66,16 @@ const Upload = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td></td>
-            <td>
-              <button>Download</button>
-            </td>
-          </tr>
+          {files.map((file) => {
+            return (
+              <tr key={file.id}>
+                <td>{file.pdf}</td>
+                <td>
+                  <button>Download</button>
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>

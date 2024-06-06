@@ -181,7 +181,8 @@ Formats the project.
     * [x] /upload is a protected route, if user is not authenticated redirect to login / signup page
     * [x] client signs up
     * [x] client logs in
-    * [] client authenticated when the page is refreshed
+    * [x] client authenticated when the page is refreshed
+    * [] client is logged out when the refresh token expires
     * [] use the refresh token to get a new access token, client remains authenticated
 * [] Add authentication with firebase
 * [] Design ui to upload documents required for approvals
