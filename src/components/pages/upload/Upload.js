@@ -5,7 +5,10 @@ const Upload = () => {
   const [fileName, setFileName] = useState('');
   const [files, setFiles] = useState([{}]);
   const uploadUrl = process.env.REACT_APP_API_UPLOAD_URL;
-  const saveFile = () => {
+  const [status, setStatus] = useState('');
+  const saveFile = (e) => {
+    e.preventDefault();
+
     let formData = new FormData();
     formData.append('pdf', fileName);
 
@@ -14,12 +17,12 @@ const Upload = () => {
         'Content-Type': 'multipart/form-data',
       },
     };
-    console.log(formData);
 
     axios
       .post(`${uploadUrl}files/`, formData, axiosConfig)
       .then((response) => {
-        console.log(response);
+        console.log(response.data);
+        setStatus('File upload successful');
       })
       .catch((error) => {
         console.error('Error:', error);
@@ -31,7 +34,6 @@ const Upload = () => {
       .get(`${uploadUrl}files/`)
       .then((response) => {
         setFiles(response.data);
-        console.log(response.data);
       })
       .catch((error) => {
         console.error('Error', error);
@@ -40,8 +42,32 @@ const Upload = () => {
 
   useEffect(() => {
     getFiles();
-    console.log(files);
+    // console.log(files);
   }, []);
+
+  const downloadFile = (response, title) => {
+    console.log(response);
+    const url = window.URL.createObjectURL(new Blob([response.data]));
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute('download', title + '.pdf');
+    document.body.appendChild(link);
+    link.click();
+  };
+
+  const downloadWithAxios = (url, title) => {
+    axios({
+      method: 'get',
+      url,
+      responseType: 'arraybuffer',
+    })
+      .then((response) => {
+        downloadFile(response, title);
+      })
+      .catch((error) => {
+        console.error('Error', error);
+      });
+  };
 
   return (
     <div>
@@ -56,6 +82,8 @@ const Upload = () => {
         />
         <br />
         <input type='submit' name='submit' id='submit' onClick={saveFile} />
+        <br />
+        {status ? <p> {status} </p> : null}
       </form>
       <h1>Uploaded files</h1>
       <table>
@@ -66,12 +94,14 @@ const Upload = () => {
           </tr>
         </thead>
         <tbody>
-          {files.map((file) => {
+          {files.map((file, index) => {
             return (
-              <tr key={file.id}>
+              <tr key={index}>
                 <td>{file.pdf}</td>
                 <td>
-                  <button>Download</button>
+                  <button onClick={() => downloadWithAxios(file.pdf, file.id)}>
+                    Download
+                  </button>
                 </td>
               </tr>
             );

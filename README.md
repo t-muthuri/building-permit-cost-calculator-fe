@@ -185,7 +185,11 @@ Formats the project.
     * [] client is logged out when the refresh token expires
     * [] use the refresh token to get a new access token, client remains authenticated
 * [] Add authentication with firebase
-* [] Design ui to upload documents required for approvals
+* [] Upload documents required for approvals
+    * [] Design ui
+    * [] Upload and download on client side
+    * [] Upload and download on admin side
+    * [] Status / Progress update on client side
     - Documents include (not limited to):
         * [] Architectural drawings
         * [] Structural drawings (at least one-storey buildings and more)
