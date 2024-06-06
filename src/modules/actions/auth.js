@@ -13,7 +13,9 @@ import axios from 'axios';
 
 export const checkAuthenticated = () => async (dispatch) => {
   // check if access token exists
-  if (localStorage.getItem('access')) {
+  const accessToken = localStorage.getItem('access');
+
+  if (accessToken) {
     const config = {
       headers: {
         'Content-Type': 'application/json',

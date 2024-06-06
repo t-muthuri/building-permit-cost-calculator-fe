@@ -1,14 +1,19 @@
-import React, { useState } from 'react';
-import { connect } from 'react-redux';
+import React, { useEffect, useState } from 'react';
+import { connect, useDispatch } from 'react-redux';
 import { NavLink, Navigate } from 'react-router-dom';
-import { login } from '../../../modules/actions/auth';
+import { checkAuthenticated, login } from '../../../modules/actions/auth';
 import PropTypes from 'prop-types';
 
 const Login = ({ login, isAuthenticated }) => {
+  const dispatch = useDispatch();
   const [formLoginData, setFormLoginData] = useState({
     name: '',
     password: '',
   });
+
+  useEffect(() => {
+    dispatch(checkAuthenticated());
+  }, [dispatch]);
 
   const { name, password } = formLoginData;
   const onChange = (e) =>
