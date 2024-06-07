@@ -16,6 +16,7 @@ _Keep exploring, to infinity and beyond_ __Lightyear
 **Table of Contents**
 
 - [Project description](#project-description)
+- [Project status](#project-status)
 - [Project structure](#project-structure)
 - [Prerequisites](#prerequisites)
     - [Roadmap](#roadmap)
@@ -36,7 +37,9 @@ _Keep exploring, to infinity and beyond_ __Lightyear
   - [Books](#books)
   - [Articles](#articles)
 - [Contributions](#contributions)
-- [Best practices for developers who wish to contribute](#best-practices-for-developers-who-wish-to-contribute)
+  - [Best practices for developers who wish to contribute](#best-practices-for-developers-who-wish-to-contribute)
+  - [For professionals in the construction industry who wish to contribute](#for-professionals-in-the-construction-industry-who-wish-to-contribute)
+  - [For architects in the software development field](#for-architects-in-the-software-development-field)
   - [Available Scripts](#available-scripts)
     - [`npm test`](#npm-test)
     - [`npm run build`](#npm-run-build)
@@ -54,44 +57,83 @@ _Keep exploring, to infinity and beyond_ __Lightyear
 # Project description
 This is a service that is created to help clients and construction stakeholders know what is needed to acquire a building permit in Kenya. This service allows clients, developers, architects and any other stakeholders involved in the construction process to get an estimate of how much county approvals may cost, read articles that shed light on the same and allows them to upload documents awaiting approvals to the county government.
 
+# Project status
+* [x] Deployment status: Hosted on Vercel [Approvals website](https://building-plans-approvals-fe.vercel.app/)
+
 # Project structure
 
 Atomic folder structure
 
 ```
-└── building-plans-approvals-fe
+└── 📁building-plans-approvals-fe
+    └── 📁.circleci
+        └── config.yml
+    └── .env
+    └── .eslintignore
+    └── .eslintrc.js
     └── .gitignore
+    └── .prettierignore
+    └── .prettierrc
     └── LICENSE
     └── README.md
     └── package-lock.json
     └── package.json
-    └── public
+    └── 📁public
         └── index.html
-        └── manifest.json
         └── robots.txt
-    └── src
+    └── 📁src
         └── App.css
         └── App.js
         └── App.test.js
-        └── assets
-        └── components
-            └── atoms
-            └── molecules
-            └── organisms
-            └── pages
-                └── cost
-                └── news
+        └── 📁assets
+        └── 📁components
+            └── 📁atoms
+                └── 📁buttons
+                    └── Button.js
+                    └── button.css
+                └── 📁headings
+                    └── HeadingOne.js
+                    └── headingOne.css
+            └── 📁molecules
+                └── 📁forms
+                    └── Form.js
+                    └── form.css
+                └── 📁navbar
+                    └── Navbar.js
+                    └── navbar.css
+            └── 📁organisms
+            └── 📁pages
+                └── 📁calculator
+                    └── Calculator.js
+                └── 📁login
+                    └── Login.js
+                └── 📁news
+                    └── News.js
+                └── 📁signup
+                    └── Signup.js
+                └── 📁upload
+                    └── Upload.js
+            └── 📁templates
+                └── 📁calculator
+                └── 📁news
                 ├── upload
-            ├── templates
-        └── index.css
+        └── 📁hocs
+            └── Layout.js
         └── index.js
-        └── logo.svg
-        └── modules
+        └── 📁modules
+            └── 📁actions
+                └── auth.js
+                └── types.js
+            └── 📁reducers
+                └── auth.js
+                └── reducers.js
         └── reportWebVitals.js
-        └── services
+        └── 📁services
         └── setupTests.js
-        └── store
-        ├── utils
+        └── 📁store
+            └── store.js
+        └── 📁utils
+            └── ProtectedRoute.js
 ```
 
 # Prerequisites
