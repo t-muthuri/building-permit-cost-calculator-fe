@@ -283,6 +283,7 @@ Create a branch and a PR with your contributions. Commit messages should follow 
 - Avoid using hard-coded values in the code.
 - Before adding a new feature, check to see if an existing one can be re-designed to perform both tasks or replaced entirely with a better method.
 - When fixing what is not broken, write code that is simpler, shorter and beautiful.
+- Commit short, clear commits that target one feature at a time.
 
 ## For professionals in the construction industry who wish to contribute
 
