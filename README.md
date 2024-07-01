@@ -139,8 +139,8 @@ Atomic folder structure
 # Prerequisites
 This project has been designed with
 - ReactJs for the UI design
-- [Django for the backend](https://github.com/t-muthuri/building-plans-approvals-be)
-- MySQL db
+- [Django for the backend](https://github.com/t-muthuri/approvals-backend-test)
+- Postgres db
 - Redux for state management
 - Markdown for documentation
 - CircleCI for tracking changes <!-- and deploying -->
@@ -157,18 +157,18 @@ proposed technologies include:
 
 The following roadmap outlines the planned milestones and features for the service:
 
-1. Design planning and collaboration
-2. Initial implementation of core pages
-    - Articles
-    - Calculator
-    - Uploading dashboard
-    - Login
-    - Signup
-3. Integration of design assets
-4. Styling and responsiveness
-5. Performance optimization and testing
-6. Final bug fixes and refinements
-7. User Acceptance Testing - Launching project to different construction stakeholders i.e., architects, architecture students, architectural designers, county reps, quantity surveyors, foreman, fundis, clients e.t.c.
+1. * [x] Design planning and collaboration
+2. * [] Initial implementation of core pages
+    - * [] Articles
+    - * [x] Calculator
+    - * [x] Uploading dashboard
+    - * [x] Login
+    - * [x] Signup
+3. * [] Integration of design assets
+4. * [] Styling and responsiveness
+5. * [] Performance optimization and testing
+6. * [] Final bug fixes and refinements
+7. * [] User Acceptance Testing - Launching project to different construction stakeholders i.e., architects, architecture students, architectural designers, county reps, quantity surveyors, foreman, fundis, clients e.t.c.
 
 # Project setup
 ## Local setup
@@ -198,6 +198,7 @@ Formats the project.
 |--------------|-------------|
 | Approvals cost calculator | Calculates the estimated cost of approvals and how much it may cost to acquire a building permit in different Kenyan counties |
 | Authorization | Signup and login a client so that they are able to upload the required documents for approvals |
+|Upload | A client can upload multiple files required by the county for the approvals process
 
 # Usage
 
@@ -216,6 +217,7 @@ Formats the project.
 # to investigate
 
 * [] when I change the value of the cost of construction the ui does not rerender or update the cost
+* [] when the upload page refreshes, the dowload button appears even before a file is uploaded
 
 
 # to do
@@ -255,6 +257,7 @@ Formats the project.
 * [x] use .env to define urls
 * [] use yaml files to fetch the base url http://localhost:8000
 * [] how to use openapi (advantages)
+* [] add error messages in the ui to notify the client the state or progress of their request
 
 
 <!-- 
