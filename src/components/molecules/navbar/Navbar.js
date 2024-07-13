@@ -44,7 +44,22 @@ const Navbar = ({ logout, isAuthenticated }) => {
           News
         </NavLink>
       </li>
-
+      <li>
+        <NavLink
+          to='/about'
+          className={({ isActive, isPending, isTransitioning }) =>
+            [
+              isPending ? 'pending' : '',
+              isActive ? 'active' : '',
+              isTransitioning ? 'transitioning' : '',
+            ].join(' ')
+          }
+          // className='nav-links'
+          onClick={handleClick}
+        >
+          About
+        </NavLink>
+      </li>
       <li>
         <NavLink
           to='/login'

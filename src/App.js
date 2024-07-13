@@ -11,6 +11,7 @@ import { Provider } from 'react-redux';
 import store from './store/store';
 import ProtectedRoute from './utils/ProtectedRoute';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import About from './components/pages/about/About';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Calculator />} />
           <Route path='/news' element={<News />} />
+          <Route path='/about' element={<About />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
           <Route
