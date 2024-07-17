@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import SubmitButton from '../../atoms/buttons/SubmitButton';
 
 const Calculator = () => {
   const baseUrl = process.env.REACT_APP_API_BASE_URL;
@@ -88,7 +89,7 @@ const Calculator = () => {
             placeholder='Enter the cost of construction'
           />
           <br />
-          <input type='submit' name='submit' id='submit' />
+          <SubmitButton />
         </form>
       }
       {costs.length > 0 ? (

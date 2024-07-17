@@ -251,6 +251,8 @@ Formats the project.
         * [x] total cost of approvals calculated est
         * [] combine the multiple axios get requests - <span style="color:red;">refactor</span>
 * [] Construction articles news scrapper
+    * [] **content aggregation** - extract construction, building permit data from aak's website.
+    * [] collect similar data from atleast two more credible sources and display this data in the news page to make it easy for clients to reference and view it.
 * [x] Add circleci and code linting
 * [x] Update folder structure in README
 * [] set up an automated build server - research on how to do this first
