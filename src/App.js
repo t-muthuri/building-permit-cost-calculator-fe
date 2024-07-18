@@ -17,9 +17,10 @@ function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
-          <Route path='/' element={<Calculator />} />
+          <Route path='/' element={<Navbar />} />
+          <Route path='/calculator' element={<Calculator />} />
           <Route path='/news' element={<News />} />
           <Route path='/about' element={<About />} />
           <Route path='/login' element={<Login />} />

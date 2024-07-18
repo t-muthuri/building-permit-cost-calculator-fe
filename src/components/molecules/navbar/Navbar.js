@@ -13,83 +13,113 @@ const Navbar = ({ logout, isAuthenticated }) => {
 
   const guestLinks = () => (
     <Fragment>
-      <li>
-        <NavLink
-          to='/'
-          className={({ isActive, isPending, isTransitioning }) =>
-            [
-              isPending ? 'pending' : '',
-              isActive ? 'active' : '',
-              isTransitioning ? 'transitioning' : '',
-            ].join(' ')
-          }
-          // className='nav-links'
-          onClick={handleClick}
-        >
-          Calculator
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to='/news'
-          className={({ isActive, isPending, isTransitioning }) =>
-            [
-              isPending ? 'pending' : '',
-              isActive ? 'active' : '',
-              isTransitioning ? 'transitioning' : '',
-            ].join(' ')
-          }
-          onClick={handleClick}
-        >
-          News
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to='/about'
-          className={({ isActive, isPending, isTransitioning }) =>
-            [
-              isPending ? 'pending' : '',
-              isActive ? 'active' : '',
-              isTransitioning ? 'transitioning' : '',
-            ].join(' ')
-          }
-          // className='nav-links'
-          onClick={handleClick}
-        >
-          About
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to='/login'
-          className={({ isActive, isPending, isTransitioning }) =>
-            [
-              isPending ? 'pending' : '',
-              isActive ? 'active' : '',
-              isTransitioning ? 'transitioning' : '',
-            ].join(' ')
-          }
-          onClick={handleClick}
-        >
-          Login
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to='/signup'
-          className={({ isActive, isPending, isTransitioning }) =>
-            [
-              isPending ? 'pending' : '',
-              isActive ? 'active' : '',
-              isTransitioning ? 'transitioning' : '',
-            ].join(' ')
-          }
-          onClick={handleClick}
-        >
-          Signup
-        </NavLink>
-      </li>
+      <div>
+        <div>
+          <li>
+            <NavLink
+              to='/'
+              className={({ isActive, isPending, isTransitioning }) =>
+                [
+                  isPending ? 'pending' : '',
+                  isActive ? 'active' : '',
+                  isTransitioning ? 'transitioning' : '',
+                ].join(' ')
+              }
+              // className='nav-links'
+              onClick={handleClick}
+            >
+              Home
+            </NavLink>
+          </li>
+        </div>
+        <div>
+          <li>
+            <NavLink
+              to='/calculator'
+              className={({ isActive, isPending, isTransitioning }) =>
+                [
+                  isPending ? 'pending' : '',
+                  isActive ? 'active' : '',
+                  isTransitioning ? 'transitioning' : '',
+                ].join(' ')
+              }
+              // className='nav-links'
+              onClick={handleClick}
+            >
+              Calculator
+            </NavLink>
+          </li>
+        </div>
+        <div>
+          <li>
+            <NavLink
+              to='/news'
+              className={({ isActive, isPending, isTransitioning }) =>
+                [
+                  isPending ? 'pending' : '',
+                  isActive ? 'active' : '',
+                  isTransitioning ? 'transitioning' : '',
+                ].join(' ')
+              }
+              onClick={handleClick}
+            >
+              News
+            </NavLink>
+          </li>
+        </div>
+        <div>
+          <li>
+            <NavLink
+              to='/about'
+              className={({ isActive, isPending, isTransitioning }) =>
+                [
+                  isPending ? 'pending' : '',
+                  isActive ? 'active' : '',
+                  isTransitioning ? 'transitioning' : '',
+                ].join(' ')
+              }
+              // className='nav-links'
+              onClick={handleClick}
+            >
+              About
+            </NavLink>
+          </li>
+        </div>
+        {/* <div>
+          <li>
+            <NavLink
+              to='/login'
+              className={({ isActive, isPending, isTransitioning }) =>
+                [
+                  isPending ? 'pending' : '',
+                  isActive ? 'active' : '',
+                  isTransitioning ? 'transitioning' : '',
+                ].join(' ')
+              }
+              onClick={handleClick}
+            >
+              Login
+            </NavLink>
+          </li>
+        </div> */}
+        <div>
+          <li>
+            <NavLink
+              to='/signup'
+              className={({ isActive, isPending, isTransitioning }) =>
+                [
+                  isPending ? 'pending' : '',
+                  isActive ? 'active' : '',
+                  isTransitioning ? 'transitioning' : '',
+                ].join(' ')
+              }
+              onClick={handleClick}
+            >
+              Signup
+            </NavLink>
+          </li>
+        </div>
+      </div>
     </Fragment>
   );
 

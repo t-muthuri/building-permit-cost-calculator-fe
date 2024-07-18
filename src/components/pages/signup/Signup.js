@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { signup } from '../../../modules/actions/auth';
 import { connect } from 'react-redux';
-import { Navigate } from 'react-router-dom';
+import { NavLink, Navigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const Signup = ({ signup, isAuthenticated }) => {
@@ -32,6 +32,7 @@ const Signup = ({ signup, isAuthenticated }) => {
 
   return (
     <div>
+      <h1>Signup</h1>
       <form onSubmit={(e) => onSubmit(e)}>
         <label htmlFor='name'>Name:</label>
         <input
@@ -70,6 +71,13 @@ const Signup = ({ signup, isAuthenticated }) => {
         <input type='submit' name='submit' id='submit' />
       </form>
       <p>Do it with passion or not at all</p>
+      <div>
+        <p>
+          {' '}
+          Already have an account?
+          <NavLink to='/login'>Login</NavLink>
+        </p>
+      </div>
     </div>
   );
 };
