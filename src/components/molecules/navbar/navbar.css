@@ -1,39 +1,43 @@
 .home-link {
   grid-area: home;
+  background-color: rgb(226, 147, 43);
 }
 
 .calculator-link {
-    grid-area: calculator;
+  grid-area: calculator;
+  background-color: rgb(226, 64, 43);
 }
 
 .news-link {
-    grid-area: news;
+  grid-area: news;
+  background-color: rgb(43, 128, 226);
 }
 
 .login-link {
-    grid-area: login;
+  grid-area: login;
+  background-color: rgb(174, 43, 226);
 }
 
 .about-link {
-    grid-area: about;
+  grid-area: about;
+  background-color: rgb(226, 43, 156);
 }
 
 .link-container {
-    height: 100vh;
-    display: grid;
-    grid-template-areas: 
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
     'home home home home home home'
     'news about about about login login'
     'news calculator calculator calculator calculator calculator';
-    gap: 10px;
-    background-color: black;
-    padding: 10px;
+  gap: 10px;
+  background-color: black;
+  padding: 10px;
 }
 
 .link-container > div {
-    background-color: pink;
-    text-align: center;
-    font-size: 30px;
-    padding: 20px, 0;
-    
+  /* background-color: pink; */
+  text-align: center;
+  font-size: 30px;
+  padding: 20px, 0;
 }
