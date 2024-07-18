@@ -1,0 +1,39 @@
+.home-link {
+  grid-area: home;
+}
+
+.calculator-link {
+    grid-area: calculator;
+}
+
+.news-link {
+    grid-area: news;
+}
+
+.login-link {
+    grid-area: login;
+}
+
+.about-link {
+    grid-area: about;
+}
+
+.link-container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'home home home home home home'
+    'news about about about login login'
+    'news calculator calculator calculator calculator calculator';
+    gap: 10px;
+    background-color: black;
+    padding: 10px;
+}
+
+.link-container > div {
+    background-color: pink;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px, 0;
+    
+}

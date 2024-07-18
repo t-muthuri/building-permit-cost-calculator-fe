@@ -13,8 +13,8 @@ const Navbar = ({ logout, isAuthenticated }) => {
 
   const guestLinks = () => (
     <Fragment>
-      <div>
-        <div>
+      <div className='link-container'>
+        <div className='home-link'>
           <li>
             <NavLink
               to='/'
@@ -32,7 +32,7 @@ const Navbar = ({ logout, isAuthenticated }) => {
             </NavLink>
           </li>
         </div>
-        <div>
+        <div className='calculator-link'>
           <li>
             <NavLink
               to='/calculator'
@@ -50,7 +50,7 @@ const Navbar = ({ logout, isAuthenticated }) => {
             </NavLink>
           </li>
         </div>
-        <div>
+        <div className='news-link'>
           <li>
             <NavLink
               to='/news'
@@ -67,7 +67,7 @@ const Navbar = ({ logout, isAuthenticated }) => {
             </NavLink>
           </li>
         </div>
-        <div>
+        <div className='about-link'>
           <li>
             <NavLink
               to='/about'
@@ -85,7 +85,7 @@ const Navbar = ({ logout, isAuthenticated }) => {
             </NavLink>
           </li>
         </div>
-        {/* <div>
+        <div className='login-link'>
           <li>
             <NavLink
               to='/login'
@@ -101,8 +101,8 @@ const Navbar = ({ logout, isAuthenticated }) => {
               Login
             </NavLink>
           </li>
-        </div> */}
-        <div>
+        </div>
+        {/* <div>
           <li>
             <NavLink
               to='/signup'
@@ -118,7 +118,7 @@ const Navbar = ({ logout, isAuthenticated }) => {
               Signup
             </NavLink>
           </li>
-        </div>
+        </div> */}
       </div>
     </Fragment>
   );
@@ -134,7 +134,7 @@ const Navbar = ({ logout, isAuthenticated }) => {
   return (
     <div>
       <ul className={click ? 'navbar active' : 'navbar'}>
-        <li>
+        {/* <li>
           <NavLink
             to='/upload'
             className={({ isActive, isPending, isTransitioning }) =>
@@ -148,7 +148,8 @@ const Navbar = ({ logout, isAuthenticated }) => {
           >
             Upload
           </NavLink>
-        </li>
+        </li> */}
+
         {guestLinks()}
         {isAuthenticated && authLinks()}
       </ul>

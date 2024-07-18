@@ -4,8 +4,10 @@ import Navbar from '../../molecules/navbar/Navbar';
 
 const Home = () => {
   return (
-    <div className='container-home'>
-      <Navbar />
+    <div className='home-container'>
+      <div>
+        <Navbar />
+      </div>
     </div>
   );
 };
