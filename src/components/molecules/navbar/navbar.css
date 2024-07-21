@@ -12,7 +12,7 @@
 }
 
 .home-link:hover {
-  box-shadow: inset 1500px 0 0 0 #f47d07;
+  box-shadow: inset 1400px 0 0 0 #f47d07;
 }
 
 .calculator-link {
@@ -45,7 +45,7 @@
 }
 
 .about-link:hover {
-  box-shadow: inset 900px 0 0 0 #d80286;
+  box-shadow: inset 700px 0 0 0 #d80286;
 }
 
 .link-container {
@@ -69,7 +69,7 @@
   /* padding: 20px, 0; */
 }
 
-a.active {
+/* a.active {
   text-decoration: none;
   color: white;
-}
+} */
