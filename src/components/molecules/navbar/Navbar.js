@@ -18,14 +18,21 @@ const Navbar = ({ logout, isAuthenticated }) => {
           <li>
             <NavLink
               to='/'
-              className={({ isActive, isPending, isTransitioning }) =>
-                [
-                  isPending ? 'pending' : '',
-                  isActive ? 'active' : '',
-                  isTransitioning ? 'transitioning' : '',
-                ].join(' ')
-              }
-              // className='nav-links'
+              // className={({ isActive, isPending, isTransitioning }) =>
+              //   [
+              //     isPending ? 'pending' : '',
+              //     isActive ? 'active' : '',
+              //     isTransitioning ? 'transitioning' : '',
+              //   ].join(' ')
+              // }
+              className='nav-links'
+              // style={({ isActive, isPending, isTransitioning }) => {
+              //   return {
+              //     textDecoration: isActive ? 'none' : 'bold',
+              //     color: isPending ? 'white' : 'white',
+              //     viewTransitionName: isTransitioning ? 'slide' : '',
+              //   };
+              // }}
               onClick={handleClick}
             >
               Home
@@ -36,14 +43,21 @@ const Navbar = ({ logout, isAuthenticated }) => {
           <li>
             <NavLink
               to='/calculator'
-              className={({ isActive, isPending, isTransitioning }) =>
-                [
-                  isPending ? 'pending' : '',
-                  isActive ? 'active' : '',
-                  isTransitioning ? 'transitioning' : '',
-                ].join(' ')
-              }
-              // className='nav-links'
+              // className={({ isActive, isPending, isTransitioning }) =>
+              //   [
+              //     isPending ? 'pending' : '',
+              //     isActive ? 'active' : '',
+              //     isTransitioning ? 'transitioning' : '',
+              //   ].join(' ')
+              // }
+              className='nav-links'
+              // style={({ isActive, isPending, isTransitioning }) => {
+              //   return {
+              //     textDecoration: isActive ? 'none' : 'bold',
+              //     color: isPending ? 'white' : 'white',
+              //     viewTransitionName: isTransitioning ? 'slide' : '',
+              //   };
+              // }}
               onClick={handleClick}
             >
               Calculator
@@ -54,13 +68,21 @@ const Navbar = ({ logout, isAuthenticated }) => {
           <li>
             <NavLink
               to='/news'
-              className={({ isActive, isPending, isTransitioning }) =>
-                [
-                  isPending ? 'pending' : '',
-                  isActive ? 'active' : '',
-                  isTransitioning ? 'transitioning' : '',
-                ].join(' ')
-              }
+              // className={({ isActive, isPending, isTransitioning }) =>
+              //   [
+              //     isPending ? 'pending' : '',
+              //     isActive ? 'active' : '',
+              //     isTransitioning ? 'transitioning' : '',
+              //   ].join(' ')
+              // }
+              className='nav-links'
+              // style={({ isActive, isPending, isTransitioning }) => {
+              //   return {
+              //     textDecoration: isActive ? 'none' : 'bold',
+              //     color: isPending ? 'white' : 'white',
+              //     viewTransitionName: isTransitioning ? 'slide' : '',
+              //   };
+              // }}
               onClick={handleClick}
             >
               News
@@ -71,14 +93,21 @@ const Navbar = ({ logout, isAuthenticated }) => {
           <li>
             <NavLink
               to='/about'
-              className={({ isActive, isPending, isTransitioning }) =>
-                [
-                  isPending ? 'pending' : '',
-                  isActive ? 'active' : '',
-                  isTransitioning ? 'transitioning' : '',
-                ].join(' ')
-              }
-              // className='nav-links'
+              // className={({ isActive, isPending, isTransitioning }) =>
+              //   [
+              //     isPending ? 'pending' : '',
+              //     isActive ? 'active' : '',
+              //     isTransitioning ? 'transitioning' : '',
+              //   ].join(' ')
+              // }
+              className='nav-links'
+              // style={({ isActive, isPending, isTransitioning }) => {
+              //   return {
+              //     textDecoration: isActive ? 'none' : 'bold',
+              //     color: isPending ? 'white' : 'white',
+              //     viewTransitionName: isTransitioning ? 'slide' : '',
+              //   };
+              // }}
               onClick={handleClick}
             >
               About
@@ -89,13 +118,21 @@ const Navbar = ({ logout, isAuthenticated }) => {
           <li>
             <NavLink
               to='/login'
-              className={({ isActive, isPending, isTransitioning }) =>
-                [
-                  isPending ? 'pending' : '',
-                  isActive ? 'active' : '',
-                  isTransitioning ? 'transitioning' : '',
-                ].join(' ')
-              }
+              // className={({ isActive, isPending, isTransitioning }) =>
+              //   [
+              //     isPending ? 'pending' : '',
+              //     isActive ? 'active' : '',
+              //     isTransitioning ? 'transitioning' : '',
+              //   ].join(' ')
+              // }
+              className='nav-links'
+              // style={({ isActive, isPending, isTransitioning }) => {
+              //   return {
+              //     textDecoration: isActive ? 'none' : 'bold',
+              //     color: isPending ? 'white' : 'white',
+              //     viewTransitionName: isTransitioning ? 'slide' : '',
+              //   };
+              // }}
               onClick={handleClick}
             >
               Login
@@ -113,6 +150,7 @@ const Navbar = ({ logout, isAuthenticated }) => {
                   isTransitioning ? 'transitioning' : '',
                 ].join(' ')
               }
+              className='nav-links'
               onClick={handleClick}
             >
               Signup

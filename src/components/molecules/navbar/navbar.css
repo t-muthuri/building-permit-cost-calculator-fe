@@ -9,6 +9,7 @@
 
 .home-link {
   grid-area: home;
+  border: 3px solid #f47d07;
 }
 
 .home-link:hover {
@@ -17,6 +18,8 @@
 
 .calculator-link {
   grid-area: calculator;
+  border: 3px solid #fd4f00;
+
 }
 
 .calculator-link:hover {
@@ -25,15 +28,19 @@
 
 .news-link {
   grid-area: news;
+  border: 3px solid #e30613;
+
 
 }
 
 .news-link:hover {
-  box-shadow: inset 300px 0 0 0 #e30613;
+  box-shadow: inset 400px 0 0 0 #e30613;
 }
 
 .login-link {
   grid-area: login;
+  border: 3px solid #2f255c;
+
 }
 
 .login-link:hover {
@@ -42,6 +49,8 @@
 
 .about-link {
   grid-area: about;
+  border: 3px solid #d80286;
+
 }
 
 .about-link:hover {
@@ -55,8 +64,8 @@
     'home home home home home home'
     'news about about about login login'
     'news calculator calculator calculator calculator calculator';
-  /* gap: 10px; */
-  /* padding: 10px; */
+  gap: 30px;
+  padding: 10px;
   background-image: url('../../../assets/pexels-tima-miroshnichenko-6614757.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,11 +74,14 @@
 
 .link-container > div {
   text-align: center;
-  font-size: 30px;
-  /* padding: 20px, 0; */
+  /* font-size: 30px; */
+  /* padding: 90px; */
 }
 
-/* a.active {
+.nav-links {
   text-decoration: none;
+  font-size: 7em;
+  transition: ease-out 0.4s;
   color: white;
-} */
+  font-weight: bold;
+}
