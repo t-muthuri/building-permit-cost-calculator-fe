@@ -14,7 +14,7 @@ const Navbar = ({ logout, isAuthenticated }) => {
   const guestLinks = () => (
     <Fragment>
       <div className='link-container'>
-        <div className='home-link'>
+        <div className='div-slide home-link'>
           <li>
             <NavLink
               to='/'
@@ -32,7 +32,7 @@ const Navbar = ({ logout, isAuthenticated }) => {
             </NavLink>
           </li>
         </div>
-        <div className='calculator-link'>
+        <div className='div-slide calculator-link'>
           <li>
             <NavLink
               to='/calculator'
@@ -50,7 +50,7 @@ const Navbar = ({ logout, isAuthenticated }) => {
             </NavLink>
           </li>
         </div>
-        <div className='news-link'>
+        <div className='div-slide news-link'>
           <li>
             <NavLink
               to='/news'
@@ -67,7 +67,7 @@ const Navbar = ({ logout, isAuthenticated }) => {
             </NavLink>
           </li>
         </div>
-        <div className='about-link'>
+        <div className='div-slide about-link'>
           <li>
             <NavLink
               to='/about'
@@ -85,7 +85,7 @@ const Navbar = ({ logout, isAuthenticated }) => {
             </NavLink>
           </li>
         </div>
-        <div className='login-link'>
+        <div className='div-slide login-link'>
           <li>
             <NavLink
               to='/login'
