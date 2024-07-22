@@ -221,6 +221,9 @@ Formats the project.
 
 
 # to do
+* [] Simplicity:
+    how can clients get to where/ what they want in less than three clicks on the approvaals site?
+    get rid of any unnecessary pages
 * [] Work on the uploading documents feature
     * [x] /upload is a protected route, if user is not authenticated redirect to login / signup page
     * [x] client signs up
