@@ -100,17 +100,18 @@
       'news calculator calculator calculator calculator calculator';
   }
 }
-/* 
-@media (min-width: 600px) {
+
+@media (min-width: 700px) {
   .link-container {
-    font-size: 0.6em;
-    grid-template-areas:
-      'home home'
-      'news news'
-      'about login'
-      'calculator calculator';
+    font-size: 1.2em;
   }
-} */
+}
+
+@media (min-width: 950px) {
+  .link-container {
+    font-size: 2em;
+  }
+}
 
     /* grid-template-columns: 1fr 3fr; */
     /* grid-template-areas:
