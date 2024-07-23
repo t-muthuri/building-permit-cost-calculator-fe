@@ -159,7 +159,6 @@ The following roadmap outlines the planned milestones and features for the servi
 
 1. * [x] Design planning and collaboration
 2. * [] Initial implementation of core pages
-    - * [] Articles
     - * [x] Calculator
     - * [x] Uploading dashboard
     - * [x] Login
@@ -253,9 +252,6 @@ Formats the project.
             * [] use React's state management to update and render the UI dynamically
         * [x] total cost of approvals calculated est
         * [] combine the multiple axios get requests - <span style="color:red;">refactor</span>
-* [] Construction articles news scrapper
-    * [] **content aggregation** - extract construction, building permit data from aak's website.
-    * [] collect similar data from atleast two more credible sources and display this data in the news page to make it easy for clients to reference and view it.
 * [x] Add circleci and code linting
 * [x] Update folder structure in README
 * [] set up an automated build server - research on how to do this first

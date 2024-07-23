@@ -16,25 +16,7 @@ const Navbar = ({ logout, isAuthenticated }) => {
       <div className='link-container'>
         <div className='div-slide home-link'>
           <li>
-            <NavLink
-              to='/'
-              // className={({ isActive, isPending, isTransitioning }) =>
-              //   [
-              //     isPending ? 'pending' : '',
-              //     isActive ? 'active' : '',
-              //     isTransitioning ? 'transitioning' : '',
-              //   ].join(' ')
-              // }
-              className='nav-links'
-              // style={({ isActive, isPending, isTransitioning }) => {
-              //   return {
-              //     textDecoration: isActive ? 'none' : 'bold',
-              //     color: isPending ? 'white' : 'white',
-              //     viewTransitionName: isTransitioning ? 'slide' : '',
-              //   };
-              // }}
-              onClick={handleClick}
-            >
+            <NavLink to='/' className='nav-links' onClick={handleClick}>
               Home
             </NavLink>
           </li>
@@ -43,120 +25,34 @@ const Navbar = ({ logout, isAuthenticated }) => {
           <li>
             <NavLink
               to='/calculator'
-              // className={({ isActive, isPending, isTransitioning }) =>
-              //   [
-              //     isPending ? 'pending' : '',
-              //     isActive ? 'active' : '',
-              //     isTransitioning ? 'transitioning' : '',
-              //   ].join(' ')
-              // }
               className='nav-links'
-              // style={({ isActive, isPending, isTransitioning }) => {
-              //   return {
-              //     textDecoration: isActive ? 'none' : 'bold',
-              //     color: isPending ? 'white' : 'white',
-              //     viewTransitionName: isTransitioning ? 'slide' : '',
-              //   };
-              // }}
               onClick={handleClick}
             >
               Calculator
             </NavLink>
           </li>
         </div>
-        <div className='div-slide news-link'>
-          <li>
-            <NavLink
-              to='/news'
-              // className={({ isActive, isPending, isTransitioning }) =>
-              //   [
-              //     isPending ? 'pending' : '',
-              //     isActive ? 'active' : '',
-              //     isTransitioning ? 'transitioning' : '',
-              //   ].join(' ')
-              // }
-              className='nav-links'
-              // style={({ isActive, isPending, isTransitioning }) => {
-              //   return {
-              //     textDecoration: isActive ? 'none' : 'bold',
-              //     color: isPending ? 'white' : 'white',
-              //     viewTransitionName: isTransitioning ? 'slide' : '',
-              //   };
-              // }}
-              onClick={handleClick}
-            >
-              News
-            </NavLink>
-          </li>
-        </div>
         <div className='div-slide about-link'>
           <li>
-            <NavLink
-              to='/about'
-              // className={({ isActive, isPending, isTransitioning }) =>
-              //   [
-              //     isPending ? 'pending' : '',
-              //     isActive ? 'active' : '',
-              //     isTransitioning ? 'transitioning' : '',
-              //   ].join(' ')
-              // }
-              className='nav-links'
-              // style={({ isActive, isPending, isTransitioning }) => {
-              //   return {
-              //     textDecoration: isActive ? 'none' : 'bold',
-              //     color: isPending ? 'white' : 'white',
-              //     viewTransitionName: isTransitioning ? 'slide' : '',
-              //   };
-              // }}
-              onClick={handleClick}
-            >
+            <NavLink to='/about' className='nav-links' onClick={handleClick}>
               About
             </NavLink>
           </li>
         </div>
         <div className='div-slide login-link'>
           <li>
-            <NavLink
-              to='/login'
-              // className={({ isActive, isPending, isTransitioning }) =>
-              //   [
-              //     isPending ? 'pending' : '',
-              //     isActive ? 'active' : '',
-              //     isTransitioning ? 'transitioning' : '',
-              //   ].join(' ')
-              // }
-              className='nav-links'
-              // style={({ isActive, isPending, isTransitioning }) => {
-              //   return {
-              //     textDecoration: isActive ? 'none' : 'bold',
-              //     color: isPending ? 'white' : 'white',
-              //     viewTransitionName: isTransitioning ? 'slide' : '',
-              //   };
-              // }}
-              onClick={handleClick}
-            >
+            <NavLink to='/login' className='nav-links' onClick={handleClick}>
               Login
             </NavLink>
           </li>
         </div>
-        {/* <div>
+        <div className='div-slide signup-link'>
           <li>
-            <NavLink
-              to='/signup'
-              className={({ isActive, isPending, isTransitioning }) =>
-                [
-                  isPending ? 'pending' : '',
-                  isActive ? 'active' : '',
-                  isTransitioning ? 'transitioning' : '',
-                ].join(' ')
-              }
-              className='nav-links'
-              onClick={handleClick}
-            >
+            <NavLink to='/signup' className='nav-links' onClick={handleClick}>
               Signup
             </NavLink>
           </li>
-        </div> */}
+        </div>
       </div>
     </Fragment>
   );

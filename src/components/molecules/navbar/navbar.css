@@ -12,7 +12,7 @@
 .calculator-link {
   border: 3px solid #fd4f00;
 }
-.news-link {
+.signup-link {
   border: 3px solid #e30613;
 }
 .about-link {
@@ -23,14 +23,14 @@
 }
 
 .home-link:hover {
-  box-shadow: inset 1400px 0 0 0 #f47d07;
+  box-shadow: inset 1600px 0 0 0 #f47d07;
 }
 
 .calculator-link:hover {
   box-shadow: inset 1200px 0 0 0 #fd4f00;
 }
 
-.news-link:hover {
+.signup-link:hover {
   box-shadow: inset 700px 0 0 0 #e30613;
 }
 .login-link:hover {
@@ -46,10 +46,9 @@
   display: grid;
   grid-template-areas:
     'home'
-    'news'
+    'signup'
     'about'
     'login'
-    'news'
     'calculator';
   gap: 20px;
   padding: 10px;
@@ -103,8 +102,8 @@
   .calculator-link {
     grid-area: calculator;
   }
-  .news-link {
-    grid-area: news;
+  .signup-link {
+    grid-area: signup;
   }
   .login-link {
     grid-area: login;
@@ -112,7 +111,7 @@
   .about-link {
     grid-area: about;
   }
-  .news-link:hover {
+  .signup-link:hover {
     box-shadow: inset 400px 0 0 0 #e30613;
   }
   .login-link:hover {
@@ -124,8 +123,8 @@
     font-size: 1em;
     grid-template-areas:
       'home home home home home home'
-      'news about about about login login'
-      'news calculator calculator calculator calculator calculator';
+      'signup about about about login login'
+      'signup calculator calculator calculator calculator calculator';
   }
   .link-container > div {
     padding-top: 50px;
