@@ -21,47 +21,21 @@
 .login-link {
   border: 3px solid #2f255c;
 }
-/* 
-.home-link {
-  grid-area: home;
-  border: 3px solid #f47d07;
-} */
 
 .home-link:hover {
   box-shadow: inset 1400px 0 0 0 #f47d07;
 }
 
-/* .calculator-link {
-  grid-area: calculator;
-  border: 3px solid #fd4f00;
-} */
-
 .calculator-link:hover {
   box-shadow: inset 1200px 0 0 0 #fd4f00;
 }
-/* 
-.news-link {
-  grid-area: news;
-  border: 3px solid #e30613;
-} */
 
 .news-link:hover {
   box-shadow: inset 400px 0 0 0 #e30613;
 }
-/* 
-.login-link {
-  grid-area: login;
-  border: 3px solid #2f255c;
-} */
-
 .login-link:hover {
   box-shadow: inset 500px 0 0 0 #2f255c;
 }
-/* 
-.about-link {
-  grid-area: about;
-  border: 3px solid #d80286;
-} */
 
 .about-link:hover {
   box-shadow: inset 700px 0 0 0 #d80286;
@@ -100,21 +74,33 @@
   font-family: 'Comfortaa', sans-serif;
 }
 
-/* @media (min-width: 200px) {
+@media (min-width: 500px) {
+  .home-link {
+    grid-area: home;
+  }
+  .calculator-link {
+    grid-area: calculator;
+  }
+  .news-link {
+    grid-area: news;
+  }
+  .login-link {
+    grid-area: login;
+  }
+  .about-link {
+    grid-area: about;
+  }
   .link-container {
     display: grid;
     gap: 20px;
-    font-size: 0.3em;
+    font-size: 0.9em;
     grid-template-areas:
-      'home home'
-      'news news'
-      'about about'
-      'login login'
-      'news news'
-      'calculator calculator';
+      'home home home home home home'
+      'news about about about login login'
+      'news calculator calculator calculator calculator calculator';
   }
 }
-
+/* 
 @media (min-width: 600px) {
   .link-container {
     font-size: 0.6em;
@@ -125,8 +111,12 @@
       'calculator calculator';
   }
 } */
-/* 
-grid-template-areas:
-'home home home home home home'
-'news about about about login login'
-'news calculator calculator calculator calculator calculator'; */
+
+    /* grid-template-columns: 1fr 3fr; */
+    /* grid-template-areas:
+      'home home'
+      'news news'
+      'about about'
+      'login login'
+      'news news'
+      'calculator calculator'; */
