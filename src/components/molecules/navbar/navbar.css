@@ -6,52 +6,62 @@
   -moz-transition: ease-out 0.6s;
   transition: ease-out 0.6s;
 }
-
+.home-link {
+  border: 3px solid #f47d07;
+}
+.calculator-link {
+  border: 3px solid #fd4f00;
+}
+.news-link {
+  border: 3px solid #e30613;
+}
+.about-link {
+  border: 3px solid #d80286;
+}
+.login-link {
+  border: 3px solid #2f255c;
+}
+/* 
 .home-link {
   grid-area: home;
   border: 3px solid #f47d07;
-}
+} */
 
 .home-link:hover {
   box-shadow: inset 1400px 0 0 0 #f47d07;
 }
 
-.calculator-link {
+/* .calculator-link {
   grid-area: calculator;
   border: 3px solid #fd4f00;
-
-}
+} */
 
 .calculator-link:hover {
   box-shadow: inset 1200px 0 0 0 #fd4f00;
 }
-
+/* 
 .news-link {
   grid-area: news;
   border: 3px solid #e30613;
-
-
-}
+} */
 
 .news-link:hover {
   box-shadow: inset 400px 0 0 0 #e30613;
 }
-
+/* 
 .login-link {
   grid-area: login;
   border: 3px solid #2f255c;
-
-}
+} */
 
 .login-link:hover {
   box-shadow: inset 500px 0 0 0 #2f255c;
 }
-
+/* 
 .about-link {
   grid-area: about;
   border: 3px solid #d80286;
-
-}
+} */
 
 .about-link:hover {
   box-shadow: inset 700px 0 0 0 #d80286;
@@ -61,10 +71,13 @@
   height: 100vh;
   display: grid;
   grid-template-areas:
-    'home home home home home home'
-    'news about about about login login'
-    'news calculator calculator calculator calculator calculator';
-  gap: 30px;
+    'home'
+    'news'
+    'about'
+    'login'
+    'news'
+    'calculator';
+  gap: 20px;
   padding: 10px;
   background-image: url('../../../assets/pexels-tima-miroshnichenko-6614757.jpg');
   background-repeat: no-repeat;
@@ -80,9 +93,40 @@
 
 .nav-links {
   text-decoration: none;
-  font-size: 7em;
+  font-size: 3em;
   transition: ease-out 0.4s;
   color: white;
   font-weight: bold;
-  font-family: "Comfortaa", sans-serif;
+  font-family: 'Comfortaa', sans-serif;
 }
+
+/* @media (min-width: 200px) {
+  .link-container {
+    display: grid;
+    gap: 20px;
+    font-size: 0.3em;
+    grid-template-areas:
+      'home home'
+      'news news'
+      'about about'
+      'login login'
+      'news news'
+      'calculator calculator';
+  }
+}
+
+@media (min-width: 600px) {
+  .link-container {
+    font-size: 0.6em;
+    grid-template-areas:
+      'home home'
+      'news news'
+      'about login'
+      'calculator calculator';
+  }
+} */
+/* 
+grid-template-areas:
+'home home home home home home'
+'news about about about login login'
+'news calculator calculator calculator calculator calculator'; */
