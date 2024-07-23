@@ -31,10 +31,10 @@
 }
 
 .news-link:hover {
-  box-shadow: inset 400px 0 0 0 #e30613;
+  box-shadow: inset 700px 0 0 0 #e30613;
 }
 .login-link:hover {
-  box-shadow: inset 500px 0 0 0 #2f255c;
+  box-shadow: inset 700px 0 0 0 #2f255c;
 }
 
 .about-link:hover {
@@ -62,7 +62,7 @@
 .link-container > div {
   text-align: center;
   /* font-size: 30px; */
-  /* padding: 90px; */
+  padding-top: 30px;
 }
 
 .nav-links {
@@ -74,7 +74,23 @@
   font-family: 'Comfortaa', sans-serif;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 300px) {
+  .link-container > div {
+    padding-top: 45px;
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 700px) {
+  .link-container {
+    font-size: 1.2em;
+  }
+  .link-container > div {
+    padding-top: 25px;
+  }
+}
+
+@media (min-width: 800px) {
   .home-link {
     grid-area: home;
   }
@@ -90,34 +106,31 @@
   .about-link {
     grid-area: about;
   }
+  .news-link:hover {
+    box-shadow: inset 400px 0 0 0 #e30613;
+  }
+  .login-link:hover {
+    box-shadow: inset 500px 0 0 0 #2f255c;
+  }
   .link-container {
     display: grid;
     gap: 20px;
-    font-size: 0.9em;
+    font-size: 1em;
     grid-template-areas:
       'home home home home home home'
       'news about about about login login'
       'news calculator calculator calculator calculator calculator';
   }
-}
-
-@media (min-width: 700px) {
-  .link-container {
-    font-size: 1.2em;
+  .link-container > div {
+    padding-top: 50px;
   }
 }
 
 @media (min-width: 950px) {
   .link-container {
-    font-size: 2em;
+    font-size: 1.3em;
+  }
+  .link-container > div {
+    padding-top: 60px;
   }
 }
-
-    /* grid-template-columns: 1fr 3fr; */
-    /* grid-template-areas:
-      'home home'
-      'news news'
-      'about about'
-      'login login'
-      'news news'
-      'calculator calculator'; */
