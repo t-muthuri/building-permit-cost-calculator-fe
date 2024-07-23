@@ -16,18 +16,14 @@ const Navbar = ({ logout, isAuthenticated }) => {
       <div className='link-container'>
         <div className='div-slide home-link'>
           <li>
-            <NavLink to='/' className='nav-links' onClick={handleClick}>
+            <NavLink to='/home' className='nav-links' onClick={handleClick}>
               Home
             </NavLink>
           </li>
         </div>
         <div className='div-slide calculator-link'>
           <li>
-            <NavLink
-              to='/calculator'
-              className='nav-links'
-              onClick={handleClick}
-            >
+            <NavLink to='/' className='nav-links' onClick={handleClick}>
               Calculator
             </NavLink>
           </li>

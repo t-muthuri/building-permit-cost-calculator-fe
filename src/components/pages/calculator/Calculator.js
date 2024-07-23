@@ -1,6 +1,9 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import SubmitButton from '../../atoms/buttons/SubmitButton';
+import '../calculator/calculator.css';
+import HeadingOne from '../../atoms/headings/HeadingOne';
+import Paragraph from '../../atoms/paragraphs/Paragraph';
 
 const Calculator = () => {
   const baseUrl = process.env.REACT_APP_API_BASE_URL;
@@ -45,8 +48,12 @@ const Calculator = () => {
   };
 
   return (
-    <div>
-      <h1>Approvals</h1>
+    <div className='calculator-container'>
+      <HeadingOne>Approvals Cost Calculator</HeadingOne>
+      <Paragraph>
+        Try it out and calculate how much the approval process in Kenya would
+        cost based on your construction project
+      </Paragraph>
       {
         <form onSubmit={handleSubmit}>
           <label htmlFor='size'>Project size: </label>

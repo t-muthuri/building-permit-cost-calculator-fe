@@ -27,7 +27,7 @@
 }
 
 .calculator-link:hover {
-  box-shadow: inset 1200px 0 0 0 #fd4f00;
+  box-shadow: inset 1600px 0 0 0 #fd4f00;
 }
 
 .signup-link:hover {
@@ -122,9 +122,9 @@
     gap: 20px;
     font-size: 1em;
     grid-template-areas:
-      'home home home home home home'
+      'calculator calculator calculator calculator calculator calculator'
       'signup about about about login login'
-      'signup calculator calculator calculator calculator calculator';
+      'signup home home home home home';
   }
   .link-container > div {
     padding-top: 50px;
