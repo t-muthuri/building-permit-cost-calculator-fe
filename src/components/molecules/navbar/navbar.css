@@ -76,8 +76,14 @@
 
 @media (min-width: 300px) {
   .link-container > div {
-    padding-top: 45px;
+    padding-top: 15px;
     font-size: 1.3em;
+  }
+}
+
+@media (min-width: 600px) {
+  .link-container > div {
+    padding-top: 15px;
   }
 }
 
@@ -86,7 +92,7 @@
     font-size: 1.2em;
   }
   .link-container > div {
-    padding-top: 25px;
+    padding-top: 7px;
   }
 }
 
@@ -131,6 +137,6 @@
     font-size: 1.3em;
   }
   .link-container > div {
-    padding-top: 60px;
+    padding-top: 45px;
   }
 }
