@@ -59,6 +59,7 @@ const Calculator = () => {
           <label htmlFor='size'>Project size: </label>
           <input
             type='number'
+            min='0'
             id='size'
             name='size'
             placeholder='Enter size of the project'
@@ -91,6 +92,7 @@ const Calculator = () => {
           <label htmlFor='cost'>Total cost of construction:</label>
           <input
             type='number'
+            min='0'
             id='cost'
             name='cost'
             placeholder='Enter the cost of construction'
