@@ -1,13 +1,13 @@
 import React from 'react';
-import '../headings/headingOne.css';
+import '../headingTwo/headingTwo.css';
 import PropTypes from 'prop-types';
 
-const HeadingOne = ({ children }) => {
+const HeadingTwo = ({ children }) => {
   return <div className='heading-one-container'>{children}</div>;
 };
 
-HeadingOne.propTypes = {
+HeadingTwo.propTypes = {
   children: PropTypes.toString.isRequired,
 };
 
-export default HeadingOne;
+export default HeadingTwo;

@@ -1,0 +1,32 @@
+.calculator-container {
+    height: 100vh;
+    background-image: url('../../../assets/pexels-pixabay-159045.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.calculator-form-container {
+    margin: 30px;
+    height: 90vh;
+    border: solid .5px black;   
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.575)
+}
+
+.calculator-form {
+    display: grid;
+    font-size: 2em;
+    font-family: 'Cormfaat', 'sans-serif';
+    font-weight: 300;
+}
+
+.query-fields {
+    display: flex;
+    gap: 200px;
+}
+
+.calc-form-input {
+    border-radius: 30px;
+    height: 50px;
+}
