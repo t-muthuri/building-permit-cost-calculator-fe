@@ -217,11 +217,16 @@ Formats the project.
 
 * [] when I change the value of the cost of construction the ui does not rerender or update the cost
 * [] when the upload page refreshes, the dowload button appears even before a file is uploaded
+* [] the calculator takes long to bring up the costs
 
 
 # to do
-* [] Simplicity:
-    how can clients get to where/ what they want in less than three clicks on the approvaals site?
+* [] Simplicity (improve ui/ux):
+    how can clients get to where/ what they want in less than three clicks on the approvals site?
+    * [x] The home page is the calculator
+    * [] the form uses handleChange instead of handleSubmit to give results. Calculation is done as the input is given
+    * [] give the option of using a slider in addition to filling in the numbers manually
+    * [] the list of counties and type of projects are listed in plain view reducing the  number of clicks from two to one
     get rid of any unnecessary pages
 * [] Work on the uploading documents feature
     * [x] /upload is a protected route, if user is not authenticated redirect to login / signup page
