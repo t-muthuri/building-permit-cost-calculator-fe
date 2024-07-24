@@ -7,7 +7,7 @@ import HeadingTwo from '../../atoms/headings/headingTwo/HeadingTwo';
 
 const Calculator = () => {
   const baseUrl = process.env.REACT_APP_API_BASE_URL;
-  const [size, setSize] = useState(0);
+  const [size, setSize] = useState('');
   const [county, setCounty] = useState('');
   const [projectType, setProjectType] = useState('');
   const [counties, setCounties] = useState([]);
@@ -136,7 +136,7 @@ const Calculator = () => {
             </div>
           </form>
         }
-        <div>
+        <div className='cost-container'>
           <HeadingTwo>Calculated Costs</HeadingTwo>
           <ul>
             {costs.map((cost, index) => (
