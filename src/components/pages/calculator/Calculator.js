@@ -1,34 +1,14 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-// import SubmitButton from '../../atoms/buttons/SubmitButton';
-// import '../calculator/calculator.css';
+import '../calculator/calculator.css';
 import HeadingOne from '../../atoms/headings/HeadingOne';
 import Paragraph from '../../atoms/paragraphs/Paragraph';
 
 const Calculator = () => {
-  // const [num1, setNum1] = useState(0);
-  // const [num2, setNum2] = useState(0);
-  // let [result, setResult] = useState(0);
-
-  // useEffect(() => {
-  //   setResult(num1 + num2);
-  // }, [num1, num2]);
-
-  // const handleChange = (e) => {
-  //   let value = parseInt(e.target.value);
-  //   let name = e.target.name;
-
-  //   if (name == 'num1') setNum1(value);
-  //   if (name == 'num2') setNum2(value);
-
-  //   setResult(num1 + num2);
-  // };
-
   const baseUrl = process.env.REACT_APP_API_BASE_URL;
   const [size, setSize] = useState(0);
   const [county, setCounty] = useState('');
   const [projectType, setProjectType] = useState('');
-  // const [cost, setCost] = useState(0);
   const [counties, setCounties] = useState([]);
   const [projectTypes, setProjectTypes] = useState([]);
   const [costs, setCosts] = useState([]);
@@ -58,11 +38,9 @@ const Calculator = () => {
       size: formParameters.get('size'),
       county: formParameters.get('county'),
       projectType: formParameters.get('projectType'),
-      cost: formParameters.get('cost'),
     };
 
     if (name == 'size') setSize(parseInt(values.size));
-    // if (name == 'cost') setCost(parseInt(values.cost));
     if (name == 'county') setCounty(values.county);
     if (name == 'projectType') setProjectType(values.projectType);
 
@@ -127,17 +105,6 @@ const Calculator = () => {
               </option>
             ))}
           </select>
-          {/* <br /> */}
-          {/* <label htmlFor='cost'>Total cost of construction:</label>
-          <input
-            type='number'
-            min='0'
-            id='cost'
-            name='cost'
-            placeholder='Enter the cost of construction'
-            value={cost}
-            onChange={handleChange}
-          /> */}
         </form>
       }
       <div>
