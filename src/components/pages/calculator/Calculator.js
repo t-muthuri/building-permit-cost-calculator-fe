@@ -63,64 +63,76 @@ const Calculator = () => {
         </Paragraph>
         {
           <form className='calculator-form'>
-            <div className='query-fields'>
-              <label className='calc-form-label' htmlFor='size'>
-                Project size:
-              </label>
-              <input
-                className='calc-form-input'
-                type='number'
-                min='0'
-                id='size'
-                name='size'
-                placeholder='Enter size of the project'
-                value={size}
-                onChange={handleChange}
-              />
+            <div className='label-container'>
+              <div className='label-one'>
+                <label className='calc-form-label' htmlFor='size'>
+                  Project size:
+                </label>
+              </div>
+              <br />
+              <div className='label-two'>
+                <label className='calc-form-label' htmlFor='county'>
+                  Select county:
+                </label>
+              </div>
+              <br />
+              <div className='label-three'>
+                <label className='calc-form-label' htmlFor='county'>
+                  Select county:
+                </label>
+              </div>
             </div>
-            <br />
-            <div className='query-fields'>
-              <label className='calc-form-label' htmlFor='county'>
-                Select county:
-              </label>
-              <select
-                className='calc-form-input'
-                id='county'
-                name='county'
-                value={county}
-                onChange={handleChange}
-              >
-                <option value=''>select a county</option>
-                {counties &&
-                  counties.map((county) => (
-                    <option key={county.county_no} value={county.county_name}>
-                      {county.county_name}
+            <div className='input-container'>
+              <div className='input-one'>
+                <input
+                  className='calc-form-input'
+                  type='number'
+                  min='0'
+                  id='size'
+                  name='size'
+                  placeholder='Enter size of the project'
+                  value={size}
+                  onChange={handleChange}
+                />
+              </div>
+              <br />
+              <div className='input-two'>
+                <select
+                  className='calc-form-input'
+                  id='county'
+                  name='county'
+                  value={county}
+                  onChange={handleChange}
+                >
+                  <option value=''>select a county</option>
+                  {counties &&
+                    counties.map((county) => (
+                      <option key={county.county_no} value={county.county_name}>
+                        {county.county_name}
+                      </option>
+                    ))}
+                </select>
+              </div>
+              <br />
+              <div className='input-three'>
+                <select
+                  className='calc-form-input'
+                  id='projectType'
+                  name='projectType'
+                  value={projectType}
+                  onChange={handleChange}
+                >
+                  <option value=''>select the project type: </option>
+                  {projectTypes.map((project) => (
+                    <option
+                      key={project.project_type_no}
+                      value={project.project_type_name}
+                    >
+                      {project.project_type_name}
                     </option>
                   ))}
-              </select>
-            </div>
-            <br />
-            <div className='query-fields'>
-              <label className='calc-form-label' htmlFor='projectType'>
-                Select a project type:
-              </label>
-              <select
-                className='calc-form-input'
-                id='projectType'
-                name='projectType'
-                value={projectType}
-                onChange={handleChange}
-              >
-                <option value=''>select the project type: </option>
-                {projectTypes.map((project) => (
-                  <option
-                    key={project.project_type_no}
-                    value={project.project_type_name}
-                  >
-                    {project.project_type_name}
-                  </option>
-                ))}
-              </select>
+                </select>
+              </div>
             </div>
           </form>
         }

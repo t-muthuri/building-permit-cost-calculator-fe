@@ -11,22 +11,34 @@
     height: 90vh;
     border: solid .5px black;   
     border-radius: 30px;
-    background: rgba(255, 255, 255, 0.575)
+    background: rgba(255, 255, 255, 0.575);
+    padding-bottom: 10px;
 }
 
 .calculator-form {
-    display: grid;
+    display: flex;
     font-size: 2em;
     font-family: 'Cormfaat', 'sans-serif';
     font-weight: 300;
+    gap: 20%;
 }
 
-.query-fields {
-    display: flex;
-    gap: 200px;
+.input-container {
+    /* border: solid 1px black; */
 }
+
+.label-container {
+    
+    /* border: solid 1px black; */
+}
+
 
 .calc-form-input {
     border-radius: 30px;
+    border: solid 1px black;
+    background-color: white;
     height: 50px;
+    width: 300px;
+    font-size: .5em;
+    font-family: 'Cormfaat', 'sans-serif';
 }
