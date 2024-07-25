@@ -201,39 +201,7 @@ Formats the project.
 * [] when the upload page refreshes, the dowload button appears even before a file is uploaded
 * [x] <span style='color:green;'> the calculator takes long to bring up the costs - the form handling is changed from onSubmit to onChange </span>
 
-
-# to do (ideas)
-* [] Add a **simulation engine** that mimics the behaviour of a real-world system:
-    Simulate various aspects of building permits and construction processes, including factors like:
-    * [] cost calculations.
-    * [] permit status updates
-        * [] run a simulation of new permit applications being submitted, processed and approved
-        * [] calculate the estimated cost of constructions based on these permits
-            * [] software that uses various algorithms to model real-world processes. Takes input data and uses predefined rules to simulate outcomes.
-                * [] Example: when a user calculates amount of materials used, the engine can estimate the number of stones needed to construct a one bedroom unit of 40m2 and store the data.
-    * [] Generate state: Generate the current state of the system, includes:
-        * [] number of applications processed
-        * [] status of each application (pending, approved, rejected)
-        * [] estimated costs based on factors like lcatin and type of project
-    * [] After generating the new states, the engine stores this updated information in the database. Make this data available for retrieval, analysis and further processing. This data can be used to make spot trends, decisions and improve simulation model.
-* [] The **database** persists the state - store current state of the system permanently
-    * [] if a request for a building permit is submitted, the details (applicant's name, documents, project details, status) are saved in the database
-* [] The **UI** presents the **real time** state of the system
-    * [] show the most current data as it changes without needing to refresh the page
-        * [] polling
-        * [] WebSockets
-        * [] server-sent events 
-        * [] get a list of more techniques
-            * [] Example: Show real time updates of new permit applications, their status and costs estimates as soon as they happen
-
-... understand the flow of data from being stored (persisted) in the database, exposed to clients through an API, and finally presented to users through the UI.
-
-* [] Add **monitoring and logging** tools to collect, store and analyze data about the system's performance and behaviour
-    * [] metrics
-    * [] logs
-    * [] traces
-
-# to do (cost calculator)
+# to do
 * [] Simplicity (improve ui/ux):
     how can clients get to where/ what they want in less than three clicks on the approvals site?
     * [x] The home page is the calculator
