@@ -129,10 +129,6 @@ Formats the project.
 | Authorization | Signup and login a client so that they are able to upload the required documents for approvals |
 |Upload | A client can upload multiple files required by the county for the approvals process
 
-# Usage
-
-# Services
-
 # Project limitations
 - The process of acquiring a building permit lacks harmony. Factors like the location of project, the type of project, the status of the land to be developed, the documents required to acquire a permit, lack of information for some counties, among others affect the fees charged to a developer for the project. This inconsistencies make it difficult to reach a conclusion on how to best calculate the cost of approvals. Despite of this, I have compiled a few counties that have a bit of consistency to reflect how one can come up with an estimate of the fees they could be charged for some projects in these locations. The calculations are however far from accurate.
 
@@ -151,74 +147,13 @@ Formats the project.
 - website
 - contact information
 
-# to investigate
-
-* [x] <span style='color:green;'> when I change the value of the cost of construction the ui does not rerender or update the cost - this is because the calculation does not use this field </span>
-* [] when the upload page refreshes, the dowload button appears even before a file is uploaded
-* [x] <span style='color:green;'> the calculator takes long to bring up the costs - the form handling is changed from onSubmit to onChange </span>
-
-# to do
-* [] Simplicity (improve ui/ux):
-    how can clients get to where/ what they want in less than three clicks on the approvals site?
-    * [x] The home page is the calculator
-    * [x] the form uses handleChange instead of handleSubmit to give results. Calculation is done as the input is given
-    * [] give the option of using a slider in addition to filling in the numbers manually
-    * [] the list of counties and type of projects are listed in plain view reducing the  number of clicks from two to one
-    * [] get rid of any unnecessary pages
-* [] Work on the uploading documents feature
-    * [x] /upload is a protected route, if user is not authenticated redirect to login / signup page
-    * [x] client signs up
-    * [x] client logs in
-    * [x] client authenticated when the page is refreshed
-    * [] client is logged out when the refresh token expires
-    * [] use the refresh token to get a new access token, client remains authenticated
-* [] Add authentication with firebase
-* [] Upload documents required for approvals
-    * [] Design ui
-    * [] Upload and download on client side
-    * [] Upload and download on admin side
-    * [] Status / Progress update on client side
-    - Documents include (not limited to):
-        * [] Architectural drawings
-        * [] Structural drawings (at least one-storey buildings and more)
-        * [] Architect's licence
-        * [] Structural Engineer's licence
-* [x] Approval cost calculator
-    * [x] get the form
-        * [x] project size
-        * [x] counties
-        * [x] project type
-        * [x] boq
-    * [x] post the calculated data in the console
-        * [x] post the data in the ui
-            * [x] use React's state management to update and render the UI dynamically
-        * [x] total cost of approvals calculated est
-        * [x] combine the multiple axios get requests - <span style="color:red;">refactor</span>
-* [x] Add circleci and code linting
-* [x] Update folder structure in README
-* [] set up an automated build server - research on how to do this first
-* [x] use .env to define urls
-* [] use yaml files to fetch the base url http://localhost:8000
-* [] how to use openapi (advantages)
-* [] add error messages in the ui to notify the client the state or progress of their request
-
-
-<!-- 
-- determine the purpose and scope of the software
-- list the technical reuirements
-- decide on the execution environments
-- ui/ux design
-- development methodology
-- decide on qa and testing (is it necessary now?)
-- timeline of project
- -->
-
 # References
 ## Docs
 [Draw folder structure](https://marketplace.visualstudio.com/items?itemName=jmkrivocapich.drawfolderstructure#:~:text=Navigate%20to%20the%20file%20explorer,folder%20structure%20in%20Markdown%20format!)\
 [Markdown guide](https://www.markdownguide.org/)
 
 ## Books
+
 ## Articles
 
 # Contributions
