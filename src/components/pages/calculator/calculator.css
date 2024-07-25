@@ -1,44 +1,42 @@
 .calculator-container {
-    height: 100vh;
-    background-image: url('../../../assets/pexels-pixabay-159045.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  height: 100vh;
+  background-image: url('../../../assets/pexels-pixabay-159045.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .calculator-form-container {
-    margin: 30px;
-    height: 90vh;
-    border: solid .5px black;   
-    border-radius: 30px;
-    backdrop-filter: blur(10px);
-    line-height: 70px;
-    padding-left: 50px;
+  margin: 10px;
+  height: 90vh;
+  border: solid 0.3px black;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  padding-left: 20px;
 }
 
 .calculator-form {
-    display: flex;
-    font-size: 1.5em;
-    font-family: 'Cormfaat', 'sans-serif';
-    font-weight: 300;
+  display: flex;
+  font-size: 1em;
+  font-family: 'Cormfaat', 'sans-serif';
+  font-weight: 200;
 }
 
 .input-container {
-    line-height: normal;
+  line-height: normal;
 }
 
 .label-container {
-    padding-right: 50%;
-    line-height: 40px;
+    padding-right: 10%;
+    line-height: 32px;
 }
 
 .calc-form-input {
-    padding-left: 10px;
-    border-radius: 30px;
+    border-radius: 20px;
     border: solid 1px black;
     background-color: white;
-    height: 50px;
-    width: 300px;
+    height: 40px;
+    width: 150px;
     font-size: .9em;
     font-weight: 300;
     font-family: 'Cormfaat', 'sans-serif';
@@ -54,9 +52,61 @@
 }
 
 .permit {
-    padding-right: 18%;
+  padding-right: 18%;
 }
+@media (min-width: 1000px) {
+  .calculator-form-container {
+    margin: 30px;
+    height: 90vh;
+    border: solid 0.5px black;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    line-height: 70px;
+    padding-left: 50px;
+  }
 
+  .calculator-form {
+    display: flex;
+    font-size: 1.5em;
+    font-family: 'Cormfaat', 'sans-serif';
+    font-weight: 300;
+  }
+
+  .input-container {
+    line-height: normal;
+  }
+
+  .label-container {
+    padding-right: 50%;
+    line-height: 40px;
+  }
+
+  .calc-form-input {
+    padding-left: 10px;
+    border-radius: 30px;
+    border: solid 1px black;
+    background-color: white;
+    height: 50px;
+    width: 300px;
+    font-size: 0.9em;
+    font-weight: 300;
+    font-family: 'Cormfaat', 'sans-serif';
+    color: gray;
+  }
+
+  .cost-container {
+    display: flex;
+    font-weight: 300;
+    font-family: 'Cormfaat', 'sans-serif';
+    border-top: solid 1px gray;
+    margin-top: 20px;
+  }
+
+  .permit {
+    padding-right: 18%;
+  }
+}
+/* 
 @media (min-width: 300px) {
     .calculator-form-container {
         margin: 10px;
@@ -102,4 +152,4 @@
         border-top: solid 1px gray;
         margin-top: 20px;
     }
-}
+} */
