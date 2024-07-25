@@ -2,3 +2,9 @@
     font-family: 'Cormfotaa', 'sans-serif';
     font-size: 1.5em;
 }
+
+@media (min-width: 300px) {
+    .paragraph-container {
+        font-size: 1em;
+    }
+}
