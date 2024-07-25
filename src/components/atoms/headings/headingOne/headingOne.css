@@ -3,3 +3,10 @@
     font-size: 4em;
     font-weight: 500;
 }
+
+@media (min-width: 300px) {
+    .heading-one-container {
+        font-size: 2em;
+        font-weight: 500;
+    }
+}
