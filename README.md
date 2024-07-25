@@ -10,50 +10,6 @@ Building plans approval software in ReactJs and Django.
 
 _Keep exploring, to infinity and beyond_ __Lightyear
 
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
-
-- [Project description](#project-description)
-- [Project status](#project-status)
-- [Project structure](#project-structure)
-- [Prerequisites](#prerequisites)
-    - [Roadmap](#roadmap)
-- [Project setup](#project-setup)
-  - [Local setup](#local-setup)
-    - [`npm install`](#npm-install)
-    - [`npm start`](#npm-start)
-    - [`npm run lint`](#npm-run-lint)
-    - [`npm run format`](#npm-run-format)
-- [Features](#features)
-- [Usage](#usage)
-- [Services](#services)
-- [Authors](#authors)
-- [to investigate](#to-investigate)
-- [to do](#to-do)
-- [References](#references)
-  - [Docs](#docs)
-  - [Books](#books)
-  - [Articles](#articles)
-- [Contributions](#contributions)
-  - [Best practices for developers who wish to contribute](#best-practices-for-developers-who-wish-to-contribute)
-  - [For professionals in the construction industry who wish to contribute](#for-professionals-in-the-construction-industry-who-wish-to-contribute)
-  - [For architects in the software development field](#for-architects-in-the-software-development-field)
-  - [Available Scripts](#available-scripts)
-    - [`npm test`](#npm-test)
-    - [`npm run build`](#npm-run-build)
-    - [`npm run eject`](#npm-run-eject)
-  - [Learn More](#learn-more)
-    - [Code Splitting](#code-splitting)
-    - [Analyzing the Bundle Size](#analyzing-the-bundle-size)
-    - [Making a Progressive Web App](#making-a-progressive-web-app)
-    - [Advanced Configuration](#advanced-configuration)
-    - [Deployment](#deployment)
-    - [`npm run build` fails to minify](#npm-run-build-fails-to-minify)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # Project description
 This is a service that is created to help clients and construction stakeholders know what is needed to acquire a building permit in Kenya. This service allows clients, developers, architects and any other stakeholders involved in the construction process to get an estimate of how much county approvals may cost, read articles that shed light on the same and allows them to upload documents awaiting approvals to the county government.
 
