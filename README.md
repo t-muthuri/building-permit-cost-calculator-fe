@@ -158,7 +158,7 @@ proposed technologies include:
 The following roadmap outlines the planned milestones and features for the service:
 
 1. * [x] Design planning and collaboration
-2. * [] Initial implementation of core pages
+2. * [x] Initial implementation of core pages
     - * [x] Calculator
     - * [x] Uploading dashboard
     - * [x] Login
@@ -203,13 +203,21 @@ Formats the project.
 
 # Services
 
-# Authors
+# Project limitations
+- The process of acquiring a building permit lacks harmony. Factors like the location of project, the type of project, the status of the land to be developed, the documents required to acquire a permit, lack of information for some counties, among others affect the fees charged to a developer for the project. This inconsistencies make it difficult to reach a conclusion on how to best calculate the cost of approvals. Despite of this, I have compiled a few counties that have a bit of consistency to reflect how one can come up with an estimate of the fees they could be charged for some projects in these locations. The calculations are however far from accurate.
 
-**Sharon Korir**
+# Project assumptions
+- The information provided by the AAK in their [Build Hub](https://buildhub.aak.or.ke/) section is accurate.
+
+# Author
+
+**Tressie Muthuri**
 - website
 - contact information
 
-**Tressie Muthuri**
+# Collaborators
+
+**Sharon Korir**
 - website
 - contact information
 
@@ -220,23 +228,45 @@ Formats the project.
 * [x] <span style='color:green;'> the calculator takes long to bring up the costs - the form handling is changed from onSubmit to onChange </span>
 
 
-# to do
-* [] Add a simulation engine that mimics the behaviour of a real-world system:
+# to do (ideas)
+* [] Add a **simulation engine** that mimics the behaviour of a real-world system:
     Simulate various aspects of building permits and construction processes, including factors like:
     * [] cost calculations.
     * [] permit status updates
         * [] run a simulation of new permit applications being submitted, processed and approved
-        * [] calculate the estimated cos of constructions based on these permits
+        * [] calculate the estimated cost of constructions based on these permits
             * [] software that uses various algorithms to model real-world processes. Takes input data and uses predefined rules to simulate outcomes.
                 * [] Example: when a user calculates amount of materials used, the engine can estimate the number of stones needed to construct a one bedroom unit of 40m2 and store the data.
-    * [] After generating the new states, the engine stores this updated information in the database. Make this data available for retrieval, analysis and further processing.
+    * [] Generate state: Generate the current state of the system, includes:
+        * [] number of applications processed
+        * [] status of each application (pending, approved, rejected)
+        * [] estimated costs based on factors like lcatin and type of project
+    * [] After generating the new states, the engine stores this updated information in the database. Make this data available for retrieval, analysis and further processing. This data can be used to make spot trends, decisions and improve simulation model.
+* [] The **database** persists the state - store current state of the system permanently
+    * [] if a request for a building permit is submitted, the details (applicant's name, documents, project details, status) are saved in the database
+* [] The **UI** presents the **real time** state of the system
+    * [] show the most current data as it changes without needing to refresh the page
+        * [] polling
+        * [] WebSockets
+        * [] server-sent events 
+        * [] get a list of more techniques
+            * [] Example: Show real time updates of new permit applications, their status and costs estimates as soon as they happen
+
+... understand the flow of data from being stored (persisted) in the database, exposed to clients through an API, and finally presented to users through the UI.
+
+* [] Add **monitoring and logging** tools to collect, store and analyze data about the system's performance and behaviour
+    * [] metrics
+    * [] logs
+    * [] traces
+
+# to do (cost calculator)
 * [] Simplicity (improve ui/ux):
     how can clients get to where/ what they want in less than three clicks on the approvals site?
     * [x] The home page is the calculator
     * [x] the form uses handleChange instead of handleSubmit to give results. Calculation is done as the input is given
     * [] give the option of using a slider in addition to filling in the numbers manually
     * [] the list of counties and type of projects are listed in plain view reducing the  number of clicks from two to one
-    get rid of any unnecessary pages
+    * [] get rid of any unnecessary pages
 * [] Work on the uploading documents feature
     * [x] /upload is a protected route, if user is not authenticated redirect to login / signup page
     * [x] client signs up

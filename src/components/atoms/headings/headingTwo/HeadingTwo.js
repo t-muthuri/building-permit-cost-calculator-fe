@@ -3,7 +3,7 @@ import '../headingTwo/headingTwo.css';
 import PropTypes from 'prop-types';
 
 const HeadingTwo = ({ children }) => {
-  return <div className='heading-one-container'>{children}</div>;
+  return <div className='heading-two-container'>{children}</div>;
 };
 
 HeadingTwo.propTypes = {

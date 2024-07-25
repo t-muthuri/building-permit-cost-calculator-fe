@@ -11,8 +11,6 @@
     height: 90vh;
     border: solid .5px black;   
     border-radius: 30px;
-    /* background: rgba(255, 255, 255, 0.575); */
-    /* filter: blur(10px); */
     backdrop-filter: blur(10px);
     line-height: 70px;
     padding-left: 50px;
@@ -26,7 +24,6 @@
 }
 
 .input-container {
-    /* padding-left: 30%; */
     line-height: normal;
 }
 
@@ -49,8 +46,13 @@
 }
 
 .cost-container {
-    line-height: 70px;
-    font-size: 1.5em;
+    display: flex;
     font-weight: 300;
     font-family: 'Cormfaat', 'sans-serif';
+    border-top: solid 1px gray;
+    margin-top: 20px;
+}
+
+.permit {
+    padding-right: 18%;
 }

@@ -78,7 +78,7 @@ const Calculator = () => {
               <br />
               <div className='label-three'>
                 <label className='calc-form-label' htmlFor='county'>
-                  Select county:
+                  Select project:
                 </label>
               </div>
             </div>
@@ -136,15 +136,21 @@ const Calculator = () => {
             </div>
           </form>
         }
-        <div className='cost-container'>
-          <HeadingTwo>Calculated Costs</HeadingTwo>
+        <div>
           <ul>
             {costs.map((cost, index) => (
               <li key={index}>
-                <strong>Building Permit Cost:</strong>{' '}
-                {cost.building_permit_cost}
-                <br />
-                <strong>Arch Building Cost:</strong> {cost.arch_building_cost}
+                <div className='cost-container'>
+                  <div className='permit'>
+                    <HeadingTwo>Kes {cost.building_permit_cost}</HeadingTwo>
+                    <Paragraph>Building permit</Paragraph>
+                    <br />
+                  </div>
+                  <div>
+                    <HeadingTwo>Kes {cost.arch_building_cost}</HeadingTwo>
+                    <Paragraph>Architectural building cost</Paragraph>
+                  </div>
+                </div>
               </li>
             ))}
           </ul>
