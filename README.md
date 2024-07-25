@@ -23,8 +23,6 @@ Atomic folder structure
 ```
 └── 📁building-plans-approvals-fe
     └── 📁.circleci
-        └── config.yml
-    └── .env
     └── .eslintignore
     └── .eslintrc.js
     └── .gitignore
@@ -35,8 +33,6 @@ Atomic folder structure
     └── package-lock.json
     └── package.json
     └── 📁public
-        └── index.html
-        └── robots.txt
     └── 📁src
         └── App.css
         └── App.js
