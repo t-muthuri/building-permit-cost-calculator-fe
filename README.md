@@ -11,7 +11,7 @@ Building plans approval software in ReactJs and Django.
 _Keep exploring, to infinity and beyond_ __Lightyear
 
 # Project description
-This is a service that is created to help clients and construction stakeholders know what is needed to acquire a building permit in Kenya. This service allows clients, developers, architects and any other stakeholders involved in the construction process to get an estimate of how much county approvals may cost, read articles that shed light on the same and allows them to upload documents awaiting approvals to the county government.
+This is a service that is created to help clients, developers and construction stakeholders get a cost estimate of fees charged by the county to acquire a building permit in Kenya.
 
 # Project status
 * [x] Deployment status: Hosted on Vercel [Approvals website](https://building-plans-approvals-fe.vercel.app/)
@@ -69,14 +69,13 @@ Atomic folder structure
 # Prerequisites
 This project has been designed with
 - ReactJs for the UI design
-- [Django for the backend](https://github.com/t-muthuri/approvals-backend-test)
+- [Django for the backend](https://github.com/t-muthuri/building-plans-approvals-be)
 - Postgres db
 - Redux for state management
 - Markdown for documentation
-- CircleCI for tracking changes <!-- and deploying -->
+- CircleCI for tracking changes
 - Eslint and prettier formatting rules
 
-<!-- built with `add technologies` -->
 <!-- 
 proposed technologies include:
 - Zustand for state management (as opposed to redux)
@@ -95,6 +94,10 @@ The following roadmap outlines the planned milestones and features for the servi
     - * [x] Signup
 3. * [] Integration of design assets
 4. * [] Styling and responsiveness
+    - * [] Calculator
+    - * [] Uploading dashboard
+    - * [] Login
+    - * [] Signup
 5. * [] Performance optimization and testing
 6. * [] Final bug fixes and refinements
 7. * [] User Acceptance Testing - Launching project to different construction stakeholders i.e., architects, architecture students, architectural designers, county reps, quantity surveyors, foreman, fundis, clients e.t.c.
