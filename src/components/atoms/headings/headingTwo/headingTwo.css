@@ -1,12 +1,12 @@
 .heading-two-container {
-    font-family: 'Cormfaat', 'sans-serif';
-    font-size: 2.5em;
-    font-weight: 500;
+  font-family: 'Cormfaat', 'sans-serif';
+  font-size: 1em;
+  font-weight: 500;
 }
 
 @media (min-width: 300px) {
-    .heading-two-container {
-        font-size: 1em;
-        font-weight: 500;
-    }
+  .heading-two-container {
+    font-size: 2.5em;
+    font-weight: 500;
+  }
 }
