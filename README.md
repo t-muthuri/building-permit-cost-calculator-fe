@@ -89,51 +89,25 @@ Atomic folder structure
         └── 📁components
             └── 📁atoms
                 └── 📁buttons
-                    └── Button.js
-                    └── button.css
                 └── 📁headings
-                    └── HeadingOne.js
-                    └── headingOne.css
+                └── 📁paragraphs
             └── 📁molecules
                 └── 📁forms
-                    └── Form.js
-                    └── form.css
                 └── 📁navbar
-                    └── Navbar.js
-                    └── navbar.css
-            └── 📁organisms
             └── 📁pages
+                └── 📁about
                 └── 📁calculator
-                    └── Calculator.js
+                └── 📁home
                 └── 📁login
-                    └── Login.js
-                └── 📁news
-                    └── News.js
                 └── 📁signup
-                    └── Signup.js
                 └── 📁upload
-                    └── Upload.js
-            └── 📁templates
-                └── 📁calculator
-                └── 📁news
-                ├── upload
         └── 📁hocs
-            └── Layout.js
         └── index.js
         └── 📁modules
             └── 📁actions
-                └── auth.js
-                └── types.js
             └── 📁reducers
-                └── auth.js
-                └── reducers.js
-        └── reportWebVitals.js
-        └── 📁services
-        └── setupTests.js
         └── 📁store
-            └── store.js
         └── 📁utils
-            └── ProtectedRoute.js
 ```
 
 # Prerequisites
