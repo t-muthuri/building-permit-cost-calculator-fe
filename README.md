@@ -93,7 +93,7 @@ The following roadmap outlines the planned milestones and features for the servi
     - * [x] Login
     - * [x] Signup
 3. * [] Integration of design assets
-4. * [] Styling and responsiveness
+4. * [] Styling and responsiveness - [Figma design](https://www.figma.com/design/mdJ40Ws9GJHuZmvbuWVUDW/approvals.ke?t=2HwaxLFEmuHXHACB-0)
     - * [] Calculator
     - * [] Uploading dashboard
     - * [] Login
