@@ -45,58 +45,78 @@ const Calculator = () => {
     if (name == 'county') setCounty(values.county);
     if (name == 'projectType') setProjectType(values.projectType);
 
-    try {
-      const response = await axios.post(`${baseUrl}calculate-cost/`, values);
-      setCosts([response.data.context]);
-    } catch (error) {
-      console.error('Error:', error);
+    // Trigger calculation only if all fields have values
+    if (values.size && values.county && values.projectType) {
+      try {
+        const response = await axios.post(`${baseUrl}calculate-cost/`, values);
+        setCosts([response.data.context]);
+      } catch (error) {
+        console.error('Error:', error);
+      }
     }
   };
 
   return (
     <div className='calculator-container'>
-      <div className='calculator-form-container'>
-        <HeadingOne>Approvals Cost Calculator</HeadingOne>
-        <Paragraph>
-          Try it out and calculate how much the approval process in Kenya would
-          cost based on your construction project
-        </Paragraph>
-        {
-          <form className='calculator-form'>
-            <div className='label-container'>
-              <div className='label-one'>
-                <label className='calc-form-label' htmlFor='size'>
-                  Project size:
-                </label>
-              </div>
-              <br />
-              <div className='label-two'>
-                <label className='calc-form-label' htmlFor='county'>
-                  Select county:
-                </label>
-              </div>
-              <br />
-              <div className='label-three'>
-                <label className='calc-form-label' htmlFor='county'>
-                  Select project:
-                </label>
-              </div>
+      <div className='calculator-frame'>
+        <div className='calculator-card'>
+          <div className='visuals-col'>
+            <div className='map-placeholder'>
+              <HeadingOne>Kenya</HeadingOne>
+              {county && (
+                <Paragraph className='selected-county-label'>
+                  {county}
+                </Paragraph>
+              )}
             </div>
-            <div className='input-container'>
-              <div className='input-one'>
+            <div className='results-overlay'>
+              {costs.length > 0 && (
+                <ul className='costs-list'>
+                  {costs.map((cost, index) => (
+                    <li key={index}>
+                      <div className='cost-item'>
+                        <HeadingTwo>
+                          KES {cost.building_permit_cost.toLocaleString()}
+                        </HeadingTwo>
+                        <Paragraph>Permit Fee</Paragraph>
+                      </div>
+                      <div className='cost-item'>
+                        <HeadingTwo>
+                          KES {cost.arch_building_cost.toLocaleString()}
+                        </HeadingTwo>
+                        <Paragraph>Arch. Cost</Paragraph>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </div>
+          <div className='controls-col'>
+            <div className='header-section'>
+              <HeadingOne>Approvals Cost</HeadingOne>
+              <Paragraph>Calculate construction approval costs.</Paragraph>
+            </div>
+            <form className='calculator-form'>
+              <div className='form-group'>
+                <label className='calc-form-label' htmlFor='size'>
+                  Project Size (sqm)
+                </label>
                 <input
                   className='calc-form-input'
                   type='number'
                   min='0'
                   id='size'
                   name='size'
-                  placeholder='Enter size of the project'
+                  placeholder='0'
                   value={size}
                   onChange={handleChange}
                 />
               </div>
-              <br />
-              <div className='input-two'>
+              <div className='form-group'>
+                <label className='calc-form-label' htmlFor='county'>
+                  county
+                </label>
                 <select
                   className='calc-form-input'
                   id='county'
@@ -104,17 +124,19 @@ const Calculator = () => {
                   value={county}
                   onChange={handleChange}
                 >
-                  <option value=''>select a county</option>
+                  <option value=''>Select County</option>
                   {counties &&
-                    counties.map((county) => (
-                      <option key={county.county_no} value={county.county_name}>
-                        {county.county_name}
+                    counties.map((c) => (
+                      <option key={c.county_no} value={c.county_name}>
+                        {c.county_name}
                       </option>
                     ))}
                 </select>
               </div>
-              <br />
-              <div className='input-three'>
+              <div className='form-group'>
+                <label className='calc-form-label' htmlFor='projectType'>
+                  Project Type
+                </label>
                 <select
                   className='calc-form-input'
                   id='projectType'
@@ -122,38 +144,19 @@ const Calculator = () => {
                   value={projectType}
                   onChange={handleChange}
                 >
-                  <option value=''>select the project type: </option>
-                  {projectTypes.map((project) => (
-                    <option
-                      key={project.project_type_no}
-                      value={project.project_type_name}
-                    >
-                      {project.project_type_name}
+                  <option value=''>Select Type</option>
+                  {projectTypes.map((p) => (
+                    <option key={p.project_type_no} value={p.project_type_name}>
+                      {p.project_type_name}
                     </option>
                   ))}
                 </select>
               </div>
+            </form>
+            <div className='footer-icons'>
+              <span>🏠</span> <span>🏭</span> <span>🏢</span> <span>⛪</span>
             </div>
-          </form>
-        }
-        <div>
-          <ul>
-            {costs.map((cost, index) => (
-              <li key={index}>
-                <div className='cost-container'>
-                  <div className='permit'>
-                    <HeadingTwo>Kes {cost.building_permit_cost}</HeadingTwo>
-                    <Paragraph>Building permit</Paragraph>
-                    <br />
-                  </div>
-                  <div>
-                    <HeadingTwo>Kes {cost.arch_building_cost}</HeadingTwo>
-                    <Paragraph>Architectural building cost</Paragraph>
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ul>
+          </div>
         </div>
       </div>
     </div>
