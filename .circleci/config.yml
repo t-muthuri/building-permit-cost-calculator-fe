@@ -24,7 +24,7 @@ jobs:
           command: npm run lint
       - run:
           name: Run tests
-          command: npm test --passWithNoTests
+          command: npm test
   build-node:
     # Build node project
     executor: node/default

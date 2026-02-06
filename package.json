@@ -22,7 +22,7 @@
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest",
+    "test": "vitest --passWithNoTests",
     "eject": "vite eject",
     "lint": "eslint src/**/*.jsx --fix",
     "format": "prettier src/**/*.jsx --write"
