@@ -24,8 +24,8 @@
     "preview": "vite preview",
     "test": "vitest",
     "eject": "vite eject",
-    "lint": "eslint src/**/*.js --fix",
-    "format": "prettier src/**/*.js --write"
+    "lint": "eslint src/**/*.jsx --fix",
+    "format": "prettier src/**/*.jsx --write"
   },
   "browserslist": {
     "production": [
