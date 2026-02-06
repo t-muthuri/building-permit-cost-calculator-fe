@@ -1,5 +1,5 @@
-import { render, screen } from '@testing-library/react';
-import { describe, test, expect } from 'vitest';
+import { render } from '@testing-library/react';
+import { describe, test } from 'vitest';
 import App from './App'; // Assuming your component name
 
 describe('app', () => {

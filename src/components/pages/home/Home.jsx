@@ -1,4 +1,3 @@
-import React from 'react';
 import '../home/home.css';
 import Navbar from '../../molecules/navbar/Navbar';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import '../headingTwo/headingTwo.css';
 import PropTypes from 'prop-types';
 

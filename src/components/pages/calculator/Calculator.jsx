@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../calculator/calculator.css';
 import HeadingOne from '../../atoms/headings/headingOne/HeadingOne';
 import Paragraph from '../../atoms/paragraphs/Paragraph';
