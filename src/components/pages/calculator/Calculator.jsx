@@ -6,7 +6,7 @@ import Paragraph from '../../atoms/paragraphs/Paragraph';
 import HeadingTwo from '../../atoms/headings/headingTwo/HeadingTwo';
 
 const Calculator = () => {
-  const baseUrl = process.env.REACT_APP_API_BASE_URL;
+  const baseUrl = import.meta.env.VITE_API_BASE_URL;
   const [size, setSize] = useState('');
   const [county, setCounty] = useState('');
   const [projectType, setProjectType] = useState('');
