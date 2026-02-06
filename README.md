@@ -4,6 +4,10 @@ Building plans approval software in ReactJs and Django.
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
+![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)
+
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+
 **Author's note:**
 
     You may notice that this README is quite detailed. The reason for this is because documentation, I have heard time and again, is like a future love letter to yourself. To make sure that important details don't get forgotten, I aim to document the building and making of this project with the keenness of a PHD student. Use the T.O.C. provided below to navigate the document with ease. Happy Coding!
