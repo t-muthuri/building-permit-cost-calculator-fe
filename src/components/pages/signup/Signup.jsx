@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { signup } from '../../../modules/actions/auth';
 import { connect } from 'react-redux';
 import { NavLink, Navigate } from 'react-router-dom';

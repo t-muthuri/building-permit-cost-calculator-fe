@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Navbar from '../components/molecules/navbar/Navbar';
 import { connect } from 'react-redux';
 import { checkAuthenticated, load_user } from '../modules/actions/auth';

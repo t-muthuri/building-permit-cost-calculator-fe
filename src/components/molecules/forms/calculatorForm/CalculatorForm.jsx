@@ -1,4 +1,3 @@
-import React from 'react';
 import '../calculatorForm/calculatorForm.css';
 
 const CalculatorForm = () => {

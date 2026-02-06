@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import { Fragment, useState } from 'react';
 import '../navbar/navbar.css';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';

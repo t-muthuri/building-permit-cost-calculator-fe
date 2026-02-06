@@ -1,10 +1,10 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Upload = () => {
   const [fileName, setFileName] = useState('');
   const [files, setFiles] = useState([{}]);
-  const uploadUrl = process.env.REACT_APP_API_UPLOAD_URL;
+  const uploadUrl = import.meta.env.VITE_API_UPLOAD_URL;
   const [status, setStatus] = useState('');
   const saveFile = (e) => {
     e.preventDefault();

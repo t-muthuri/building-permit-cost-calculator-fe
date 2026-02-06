@@ -1,5 +1,4 @@
 import './App.css';
-import React from 'react';
 import Calculator from './components/pages/calculator/Calculator';
 import Login from './components/pages/login/Login';
 import Upload from './components/pages/upload/Upload';

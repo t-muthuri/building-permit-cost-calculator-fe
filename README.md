@@ -125,6 +125,9 @@ Formats the project.
 
 <!-- how to run, test, build the software -->
 
+**7/2/26**
+migrated to vite
+
 # Features
 | Feature name | Description |
 |--------------|-------------|
