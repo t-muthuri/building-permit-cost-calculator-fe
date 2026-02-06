@@ -21,8 +21,8 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "serve": "vite preview",
-    "test": "vite test",
+    "preview": "vite preview",
+    "test": "vitest",
     "eject": "vite eject",
     "lint": "eslint src/**/*.js --fix",
     "format": "prettier src/**/*.js --write"
@@ -56,7 +56,8 @@
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
-    "vite": "^7.3.1"
+    "vite": "^7.3.1",
+    "vitest": "^4.0.18"
   },
   "husky": {
     "hooks": {

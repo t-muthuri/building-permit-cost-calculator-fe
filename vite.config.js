@@ -14,4 +14,10 @@ export default defineConfig({
     // CRA puts builds in /build, Vite defaults to /dist
     outDir: 'build',
   },
+  // Configure Vitest
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/setupTests.js',
+  },
 });
